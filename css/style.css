@@ -1,0 +1,1749 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUENTES 
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+} .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+} .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+} .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+} .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+} .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+} .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+} .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+*/
+
+
+
+.navbar{
+    background-color: #131313;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: .875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.5rem;
+    flex-wrap: nowrap;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    padding: 20px 20px;
+    flex-direction: row;
+}
+
+.navbar a{
+    color: white; 
+    text-decoration: none;
+    margin-right: 3.25rem;
+}
+
+.navbar img{
+    width: 5.50rem;
+    margin-left: 1.25rem;
+    margin-top: .5rem;
+}
+
+.navbar .btnDonar{
+    color: #4A3EE5;
+    padding: 0rem 3.25rem;
+}
+
+.OnInicio a{
+    color: #4A3EE5;
+    border-bottom: .125rem solid #4A3EE5;
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    margin-left: 10.625rem;
+}
+
+.btnDonar{
+    height: 2.5rem;
+    border: solid .125rem #4A3EE5;
+    color: #4A3EE5;
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.banner{
+    width: 100%;
+    height: 34rem;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    margin-top: 6rem;
+}
+
+.titulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.titulo1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 5rem;
+    margin-top: 1.8rem;
+    color: #6259ec;
+}
+
+.titulo2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 0.5;
+}
+
+.Sec1{
+    background-color: #070707;
+    display: flex;
+    flex-direction: column;
+    padding: 13rem 7rem 2rem 7rem;
+}
+
+.Sec1 img{
+    width: 25rem;
+}
+
+.Sec1 div{
+    position: absolute;
+    left: 50rem;
+    filter: drop-shadow(0 0 80px rgba(73, 62, 229, 0.479));
+}
+
+.Sec1 h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 4.5rem;
+    color: white;
+    width: 80%;
+}
+
+.Sec1 p{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 2rem;
+    width: 50%;
+}
+
+.Sec2{
+    background-color: #070707;
+    width: 100%;
+    height: 30rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: #171717;
+    width: 22rem;
+    height: 23rem;
+    border: solid;
+    border-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px 10px rgba(73, 62, 229, 0.479);
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    margin: 2rem;
+    margin-top: 0rem;
+}
+
+.card img{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    opacity: 80%;
+}
+
+.card h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #4A3EE5;
+    margin-top: 2rem;
+}
+
+.card p{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 1rem;
+    width: 80%;
+}
+
+.marketplace{
+    display: flex;
+    width: 100%;
+    background-color: #4A3EE5;
+    align-items: center;
+    justify-content: center;
+}
+
+.datamarket{
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    flex-direction: column;
+}
+
+.datamarket img{
+    display: flex;
+}
+
+.datamarket h2{
+    display: flex;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.datamarket h5{
+    display: flex;
+    padding-left: 2rem;
+}
+
+.Content_comentarios{
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    flex-direction: column;
+    padding-left: 3.75rem;
+    background-color: #352BB9;
+    border-radius: 1.125rem;
+    width: 51.25rem;
+    height: 23.75rem;
+    padding-left: 1.25rem;
+}
+
+.Content_comentarios h2{
+    padding-top: 1.2rem;
+}
+
+.todos_comentarios{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.6rem;
+}
+
+.comentario img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.descargar{
+    display: flex;
+    background-color: #070707;
+    width: 100%;
+    height: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding-top: 7.25rem;
+    padding-bottom: 7.25rem;
+}
+
+.descargar img{
+    display: flex;
+    width: 20rem;
+    margin-top: 2.25rem;
+    filter: drop-shadow(0 0 20px rgba(73, 62, 229, 0.479));
+    border: none;
+}
+
+
+/* GALERIA */
+
+.bannerGaleria {
+    width: 100%;
+    height: 37rem;
+}
+
+.bannerGaleria img {
+    width: 100%;
+    height: 37rem;
+}
+
+.TituloGaleriaFull {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: white;
+    text-align: start;
+    margin: 12rem 0rem 0rem 8rem;
+    width: 40rem;
+}
+
+.TituloGaleriaFull h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.titulogaleria1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.destacado{
+    background-color: #4A3EE5;
+    padding: 0.1rem 0.5rem;
+}
+
+.galeria-grid{
+    background-color: #070707;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    position: relative;
+}
+
+.galeria-grid section img{
+    width: 34rem;
+    height: 30rem;
+    align-items: center;
+}
+
+
+/* SOBRE ASTRONUS */
+
+.bannerSobreAstronus {
+    position: relative;
+    width: 100%;
+}
+
+.bannerSobreAstronus img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+}
+
+.TituloSobreAstronusFull {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: white;
+    text-align: start;
+    margin: 9rem;
+    width: 40rem;
+}
+
+.TituloSobreAstronusFull h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.tituloSobreAstronus1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.planeta{
+    position: absolute;
+    top: 20%;
+    left: 60%;
+}
+
+.planeta img{
+    width: 28rem;
+    height: 28rem;
+    opacity: 60%;
+}
+
+.Sec1_SA{
+    background-color: #070707;
+    width: 100%;
+    color: white;
+    position: relative;
+    height: auto;
+    display: flex;
+}
+
+.Sec1_SA h1{
+    padding-left: 5rem;
+    padding-top: 5rem;
+}
+
+.Sec1_SA img{
+    opacity: 50%;
+    height: 10rem;
+    padding-left: 25rem;
+}
+
+.DataSeccion{
+    background-color: #070707;
+    display: flex;
+    padding-top: 1.25rem;
+    width: 100%;
+    height: 40rem;
+    justify-content: center;
+}
+
+.img1{
+    opacity: 50%;
+    height: 30rem;
+    padding-left: 25rem;
+    display: none;
+}
+
+.DataSeccion h3{
+    padding-top: 3rem;
+}
+
+.DataSeccion p{
+    padding-right: 6rem;
+}
+
+.DataSeccion article{
+    padding-top: 3rem;
+}
+
+.descargarSobreAstronus{
+    display: flex;
+    background-color: #0D0D0D;
+    width: 100%;
+    height: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding-top: 7.25rem;
+    padding-bottom: 7.25rem;
+}
+
+.descargarSobreAstronus img{
+    display: flex;
+    width: 20rem;
+    margin-top: 2.25rem;
+    filter: drop-shadow(0 0 20px rgba(73, 62, 229, 0.479));
+    border: none;
+}
+
+
+/* CONTACTO */
+
+.bannerContacto {
+    position: absolute;
+    width: 100%;
+}
+
+.bannerContacto img {
+    width: 100%;
+    height: 37rem;
+}
+
+.TituloFullContacto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin: 9rem;
+}
+
+.TituloFullContacto h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.tituloContacto1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.destacado{
+    background-color: #4A3EE5;
+    padding: 0.1rem 0.5rem;
+}
+
+.Sec1_Contacto{
+    background-color: #070707;
+    width: 100%;
+    height: 42rem;
+}
+
+.Sec1_Contacto img{
+    height: 35rem;
+    opacity: 50%;
+    margin-left: 25%;
+    margin-top: 0.9rem;
+}
+
+.formulario{
+    position: relative;
+    display: flex;
+    background-color: #070707;
+    flex-direction: column;
+    padding-bottom: 8rem;
+    align-items: start;
+    gap: 1.5rem;
+    padding-left: 12rem;
+}
+
+.form{
+    height: 3.2rem;
+    width: 34rem;
+    color: rgb(173, 173, 173);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: transparent;
+    border: solid;
+    border-radius: 0.6rem;
+    border-color: #4A3EE5;
+    padding-left: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.mensaje{
+    height: 14rem;
+    width: 34rem;
+    color: rgb(173, 173, 173);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: transparent;
+    border: solid;
+    border-radius: 0.6rem;
+    border-color: #4A3EE5;
+    padding-left: 1.2rem;
+    padding-top: 1rem;
+    display: flex;
+    align-items: start;
+}
+
+.iconoform{
+    margin-right: 0.8rem;
+    width: 1.5rem;
+}
+
+.enviar{
+    height: 3.2rem;
+    width: 34rem;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #4A3EE5;
+    border: solid;
+    border-radius: 0.6rem;
+    border-color: #4A3EE5;
+}  
+
+
+/* DONAR */
+
+.bannerDonar {
+    position: relative;
+    width: 100%;
+}
+
+.bannerDonar img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.TituloDonarFull {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20;
+    color: white;
+    text-align: center;
+    margin: 10rem;
+}
+
+.tituloDonar1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.btnDonarClick{
+    height: 2.5rem;
+    border: solid .125rem transparent;
+    background-color: #4A3EE5;
+    color: white;
+    border-radius: 1.25rem;
+    display: flex;
+    width: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.satelite{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+
+.satelite img{
+    width: 32rem;
+    height: auto;
+    opacity: 60%;
+}
+
+.Sec1_Donar{
+    background-color: #070707;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.5rem;
+    padding-left: 8rem;
+    padding-bottom: 1rem;
+    justify-content: flex-start;
+    gap: 2rem;
+    
+}
+
+.Sec1_Donar img{
+    width: 2rem;
+    
+}
+
+.titulo_Donar{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    color: white;
+}
+
+.titulo_Donar2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    color: white;
+}
+
+.kickstarter{
+    width: 2rem;
+    padding-top: 1.5rem;
+}
+
+.DonarBTN{
+    background-color: #4A3EE5;
+    border: solid;
+    border-radius: 0.6rem;
+    border-color: #4A3EE5;
+    color: white;
+    width: 14rem;
+    height: 4rem;
+}
+
+.DonarBTN a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todos_comentariosDonar{
+    display: flex;
+    padding-top: 1.6rem;
+    gap: 1rem;
+}
+
+.separador{
+    padding-top: 2rem;
+    border: none;
+}
+
+
+/* BASICOS */
+
+.subtitulos{ /* subtitulos para textos base */
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: white;
+}
+
+.parrafos{ /* para textos base */
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer{
+    position: absolute;
+    background-color: #131313;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+footer img{
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    
+}
+
+footer div a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.enlaces{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    
+}
+
+.descarga-foot a{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.2rem;
+    
+}
+
+.RedesSociales{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 0.5rem;
+}
+
+.RedesSociales img{
+    width: 40px;
+    height: 40px;
+}
+
+.RedesSociales h3{
+    margin-bottom: 10px;
+}
+
+.iconos{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+@media  (max-width:1024px){
+
+    .navbar{
+        background-color: #131313;
+    }
+    
+    .navbar img{
+        width: 5.50rem;
+        margin-left: 1.25rem;
+        margin-top: .5rem;
+    }
+
+    .banner{
+        width: 100%;
+        height: 15rem;
+    }
+
+    .banner img{
+        width: 100%;
+        height: 20rem;
+        margin-top: 6rem;
+    }
+
+    .titulo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        margin-top: 4.2rem;
+    }
+    
+    .titulo1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 3.5rem;
+        margin-top: 1.8rem;
+        color: #6259ec;
+    }
+    
+    .titulo2 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 3.5rem;
+        line-height: 0.5;
+    }
+
+    .Sec1{
+        padding-top: 14rem;
+    }
+
+    .Sec1 div{
+        left: 20rem;
+    }
+
+    .Sec1 img{
+        width: 15rem;
+        margin-top: 20rem;
+        margin-left: 8rem;
+    }
+
+    .Sec1 h1{
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        color: white;
+        width: 100%;
+    }
+    
+    .Sec2{
+        height: 80rem;
+        flex-direction: column;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .card{
+        margin-top: 0rem;
+        width: 30rem;
+        margin: 1.5rem;
+    }
+    
+    .marketplace{
+        display: flex;
+        width: 100%;
+        background-color: #4A3EE5;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .datamarket{
+        display: flex;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+    }
+    
+    .datamarket img{
+        display: flex;
+        width: 45rem;
+        height: auto;
+    }
+    
+    .datamarket h2{
+        display: flex;
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+    
+    .datamarket h5{
+        display: flex;
+        padding-left: 2rem;
+    }
+    
+    .Content_comentarios{
+        display: flex;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+        background-color: #352BB9;
+        border-radius: 1.125rem;
+        width: 90%;
+        height: 26rem;
+        margin-bottom: 3rem;
+    }
+    
+    .Content_comentarios h2{
+        padding-top: 1.2rem;
+    }
+    
+    .todos_comentarios{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.6rem;
+        padding-bottom: 2rem;
+
+    }
+    
+    .comentario img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+
+    /*GALERIA*/
+
+    .bannerGaleria {
+        position: relative;
+        width: 100%;
+        height: 37rem;
+    }
+    
+    .bannerGaleria img {
+        width: 100%;
+        height: 37rem;
+    }
+    
+    .TituloGaleriaFull {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 20;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        color: white;
+        text-align: start;
+        margin: 12rem 0rem 0rem 6rem;
+        width: 35rem;
+    }
+    
+    .TituloGaleriaFull h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        display: flex;
+        margin-top: 2rem;
+    }
+    
+    .titulogaleria1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+    }
+    
+    .destacado{
+        background-color: #4A3EE5;
+        padding: 0.1rem 0.5rem;
+    }
+    
+    .galeria-grid{
+        background-color: #070707;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        position: relative;
+    }
+    
+    .galeria-grid section img{
+        width: 24rem;
+        height: 24rem;
+        align-items: center;
+    }
+
+    /* SOBRE ASTRONUS */
+
+    .bannerSobreAstronus {
+        position: relative;
+        width: 100%;
+        height: 34rem;
+    }
+
+    .bannerSobreAstronus img {
+        width: 100%;
+        height: 44rem;
+        display: flex;
+        position: relative;
+    }
+
+    .TituloSobreAstronusFull {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 20;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        color: white;
+        text-align: start;
+        width: 40rem;
+        margin: 10rem 0rem 0rem 3rem;
+    }
+
+    .TituloSobreAstronusFull h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        display: flex;
+        margin-top: 2rem;
+    }
+
+    .tituloSobreAstronus1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+
+    }
+
+    .planeta{
+        position: absolute;
+        top: 14%;
+        left: 60%;
+        display: none;
+    }
+
+    .planeta img{
+        width: 28rem;
+        height: 28rem;
+        opacity: 60%;
+    }
+
+    .Sec1_SA{
+        background-color: #070707;
+        width: 100%;
+        color: white;
+        position: relative;
+        height: 10rem;
+        display: flex;
+    }
+
+    .Sec1_SA h1{
+        padding-left: 3rem;
+        padding-top: 5rem;
+    }
+
+    .Sec1_SA img{
+        opacity: 50%;
+        height: 10rem;
+        padding-left: 25rem;
+        display: none;
+    }
+
+    .DataSeccion{
+        background-color: #070707;
+        display: flex;
+        padding-top: 1.25rem;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .img1{
+        opacity: 50%;
+        height: 30rem;
+        display: flex;
+    }
+
+    .img2{
+        opacity: 50%;
+        height: 30rem;
+        display: none;
+    }
+
+    .DataSeccion h3{
+        padding-top: 3rem;
+
+    }
+
+    .DataSeccion p{
+        padding-right: 0rem;
+    }
+
+    .DataSeccion article{
+        padding-top: 3rem;
+
+    }
+
+    .descargarSobreAstronus{
+        display: flex;
+        background-color: #0D0D0D;
+        width: 100%;
+        height: auto;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        padding-top: 7.25rem;
+        padding-bottom: 7.25rem;
+    }
+
+    .descargarSobreAstronus img{
+        display: flex;
+        width: 20rem;
+        margin-top: 2.25rem;
+        filter: drop-shadow(0 0 20px rgba(73, 62,   229, 0.479));
+        border: none;
+    }
+
+
+    footer{
+        position: absolute;
+        background-color: #131313;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    
+    footer img{
+        width: 6rem;
+        height: 6rem;
+        display: flex;
+        order: 1;
+    }
+    
+    footer div a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 0;
+    }
+    
+    .enlaces{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        order: 3;
+    }
+    
+    .descarga-foot{
+        order: 4;
+        width: 30%;
+    }
+
+    .descarga-foot a{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.2rem;
+    }
+    
+    .RedesSociales{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        order: 2;
+    }
+    
+    .RedesSociales img{
+        width: 40px;
+        height: 40px;
+
+    }
+    
+    .RedesSociales h3{
+        margin-bottom: 10px;
+        display: none;
+    }
+    
+    .iconos{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        justify-items: start;
+    }
+
+}
+    
+
+@media (max-width: 480px){  
+
+    .banner{
+        width: 100%;
+        height: 10rem;
+    }
+
+    .banner img{
+        width: 100%;
+        height: 10rem;
+        margin-top: 6rem;
+    }
+
+    .titulo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        margin-top: 14rem;
+    }
+    
+    .titulo1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 2.7rem;
+        margin-top: 1.8rem;
+        color: #6259ec;
+    }
+    
+    .titulo2 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 2.7rem;
+        line-height: 0.5;
+    }
+
+    .Sec1{
+        background-color: #070707;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 12rem 2rem 0rem 2rem;
+    }
+    
+    .Sec1 img{
+        display: none;
+    }
+    
+    .Sec1 div{
+        position: absolute;
+        filter: drop-shadow(0 0 80px rgba(73, 62, 229, 0.479));
+    }
+
+    .Sec1 h1{
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        color: white;
+        width: 100%;
+        padding-top: 2rem;
+    }
+    
+    .Sec1 p{
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .Sec2{
+        height: 70rem;
+        flex-direction: column;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+
+    .card{
+        width: 20rem;
+        margin: 1rem;
+    }
+
+    .card p{
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .marketplace{
+        display: flex;
+        width: 100%;
+        background-color: #4A3EE5;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .datamarket{
+        display: flex;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+    }
+    
+    .datamarket img{
+        display: flex;
+        height: 18rem;
+        width: auto;
+    }
+    
+    .datamarket h2{
+        display: flex;
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+    
+    .datamarket h5{
+        display: flex;
+        padding-left: 2rem;
+    }
+    
+    .Content_comentarios{
+        display: flex;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+        background-color: #352BB9;
+        border-radius: 1.125rem;
+        width: 90%;
+        height: auto;
+        margin-bottom: 3rem;
+    }
+    
+    .Content_comentarios h2{
+        padding-top: 1.2rem;
+    }
+    
+    .todos_comentarios{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.6rem;
+        padding-bottom: 2rem;
+        width: 90%;
+
+    }
+    
+    .comentario img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .descargar{
+        display: flex;
+        background-color: #070707;
+        width: 100%;
+        height: auto;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        padding-top: 7.25rem;
+        padding-bottom: 7.25rem;
+    }
+
+    .descargar h1{
+        text-align: center;
+        width: 80%;
+    }
+
+    .descargar img{
+        display: flex;
+        width: 20rem;
+        margin-top: 2.25rem;
+        filter: drop-shadow(0 0 20px rgba(73, 62, 229, 0.479));
+        border: none;
+    }
+
+    /*GALERIA*/
+    .bannerGaleria {
+        width: 100%;
+        height: 45rem;
+    }
+    
+    .bannerGaleria img {
+        width: 100%;
+        height: 45rem;
+    }
+    
+    .TituloGaleriaFull {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 20;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        color: white;
+        text-align: start;
+        margin: 10rem 0rem 8rem 2rem;
+        width: 20rem;
+
+    }
+    
+    .TituloGaleriaFull h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        height: auto;
+    }
+    
+    .titulogaleria1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+    }
+    
+    .destacado{
+        background-color: #4A3EE5;
+        padding: 0.1rem 0.5rem;
+    }
+    
+    .galeria-grid{
+        position: relative;
+        background-color: #070707;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+    .galeria-grid section img{
+        display: flex;
+        width: 24rem;
+        height: 24rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    /* SOBRE ASTRONUS */
+
+    .bannerSobreAstronus {
+        position: relative;
+        width: 100%;
+        height: 34rem;
+
+    }
+
+    .bannerSobreAstronus img {
+        width: 100%;
+        height: 44rem;
+        display: flex;
+        position: relative;
+    }
+
+    .TituloSobreAstronusFull {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 20;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        color: white;
+        text-align: start;
+        width: 40rem;
+        margin: 10rem 0rem 0rem 3rem;
+    }
+
+    .TituloSobreAstronusFull h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        display: flex;
+        margin-top: 2rem;
+    }
+
+    .tituloSobreAstronus1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+
+    }
+
+    .planeta{
+        position: absolute;
+        top: 14%;
+        left: 60%;
+        display: none;
+    }
+
+    .planeta img{
+        width: 28rem;
+        height: 28rem;
+        opacity: 60%;
+    }
+
+    .Sec1_SA{
+        background-color: #070707;
+        width: 100%;
+        color: white;
+        position: relative;
+        height: 10rem;
+        display: flex;
+
+    }
+
+    .Sec1_SA h1{
+        padding-left: 3rem;
+        padding-top: 5rem;
+    }
+
+    .Sec1_SA img{
+        opacity: 50%;
+        height: 30rem;
+        padding-left: 25rem;
+        display: none;
+    }
+
+    .DataSeccion{
+        background-color: #070707;
+        display: flex;
+        padding-top: 1.25rem;
+        width: 100%;
+    }
+
+    .DataSeccion img{
+        opacity: 70%;
+
+
+    }
+
+    .DataSeccion h3{
+        padding-top: 3rem;
+
+    }
+
+    .DataSeccion p{
+        padding-right: 0rem;
+    }
+
+    .DataSeccion article{
+        padding-top: 3rem;
+
+    }
+
+    .descargarSobreAstronus{
+        display: flex;
+        background-color: #0D0D0D;
+        width: 100%;
+        height: auto;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        padding-top: 7.25rem;
+        padding-bottom: 7.25rem;
+    }
+
+    .descargarSobreAstronus img{
+        display: flex;
+        width: 20rem;
+        margin-top: 2.25rem;
+        filter: drop-shadow(0 0 20px rgba(73, 62,   229, 0.479));
+        border: none;
+    }
+
+
+
+    footer{
+        position: absolute;
+        background-color: #131313;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+    }
+    
+    footer img{
+        width: 6rem;
+        height: 6rem;
+        order: 1;
+    }
+    
+    .enlaces{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        margin-top: 3rem;
+        order: 2;
+    }
+
+    footer div a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .descarga-foot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        order: 3;
+        width: 100%;
+    }
+
+    .descarga-foot a{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.2rem;
+        justify-content: center;
+
+    }
+
+    .RedesSociales{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        order: 4;
+    }
+
+    .RedesSociales h3{
+        display: flex;
+        margin-bottom: 10px;
+    }
+    
+    .iconos{
+        padding-top: 0.5rem;
+        display: flex;
+        gap: 2.5rem;
+        flex-direction: row;
+    }
+
+
+}
