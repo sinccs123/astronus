@@ -5,21 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar"> <!--Menu-->
-            <div class="logo">
-                <img src="../img/logo.png" alt="logo astronus">
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="../img/logo.png" alt="Logo Astronus" height="50">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Togglenavigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/galeria.html">GALERÍA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SOBRE ASTRONUS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item btn btn-outline-primary">
+                            <a class="nav-link" href="../pages/donar.html">DONAR</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="menu">
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="../pages/galeria.html">GALERIA</a></li>
-                <li class="OnInicio"><a href="#">SOBRE ASTRONUS</a></li>
-                <li><a href="../pages/contacto.html">CONTACTO</a></li>
-            </ul>
-            <a class="btnDonar" href="../pages/donar.html">DONAR</a>
         </nav>
     </header>
 
@@ -35,12 +60,13 @@
             </div>
 
             <section class="Sec1_SA">
-                <h1 class="tituloSobreAstronus1">DE QUÉ SE TRATA <span class="destacado">ASTRONUS?</span></h1>
+                <h1 class="tituloSobreAstronus1">DE QUÉ SE TRATA 
+                    <span class="destacado">ASTRONUS?</span>
+                </h1>
                 <img src="../img/logo_resplandor.png" alt="Logo Astronus">
             </section>
 
             <section class="DataSeccion">
-                <img class="img1" src="../img/vertspace.png" alt="imagen animada">
                 <img class="img2" src="../img/space.png" alt="imagenanim2">
                 <article>
                     <p class="parrafos">Astronus es una experiencia de Realidad Virtual que te permite explorar el espacio como nunca antes. Con lentes de VR, los usuarios pueden sumergirse en un viaje a través del cosmos, observar estrellas, interactuar con galaxias y descubrir los secretos del universo. La aplicación combina visualizaciones impactantes con información científica precisa, ofreciendo una manera fascinante y educativa de conocer más sobre el espacio que nos rodea.</h1>
@@ -81,4 +107,7 @@
             </div>
         </div>
     </footer> 
+
+    <!--Script Bootstrap-->
+    <script src="../js/bootstrap.min.js"></script>
 </body>

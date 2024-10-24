@@ -41,61 +41,11 @@
 }
 */
 
-
-
-.navbar{
-    background-color: #131313;
+header{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-style: normal;
-    font-size: .875rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 6.5rem;
-    flex-wrap: nowrap;
-    z-index: 1;
-    position: fixed;
-    width: 100%;
-    padding: 20px 20px;
-    flex-direction: row;
-}
-
-.navbar a{
-    color: white; 
-    text-decoration: none;
-    margin-right: 3.25rem;
-}
-
-.navbar img{
-    width: 5.50rem;
-    margin-left: 1.25rem;
-    margin-top: .5rem;
-}
-
-.navbar .btnDonar{
-    color: #4A3EE5;
-    padding: 0rem 3.25rem;
-}
-
-.OnInicio a{
-    color: #4A3EE5;
-    border-bottom: .125rem solid #4A3EE5;
-}
-
-.menu{
-    list-style-type: none;
-    display: flex;
-    margin-left: 10.625rem;
-}
-
-.btnDonar{
-    height: 2.5rem;
-    border: solid .125rem #4A3EE5;
-    color: #4A3EE5;
-    border-radius: 1.25rem;
-    display: flex;
-    align-items: center;
+    font-size: 1rem;
+    line-height: 4.5rem;
 }
 
 .banner{
@@ -106,35 +56,6 @@
 .banner img {
     width: 100%;
     height: auto;
-    margin-top: 6rem;
-}
-
-.titulo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    margin-top: 4rem;
-}
-
-.titulo1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 5rem;
-    margin-top: 1.8rem;
-    color: #6259ec;
-}
-
-.titulo2 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 5rem;
-    line-height: 0.5;
 }
 
 .Sec1{
@@ -364,18 +285,49 @@
     padding: 0.1rem 0.5rem;
 }
 
-.galeria-grid{
+.galeria-container{
     background-color: #070707;
     width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    position: relative;
 }
 
-.galeria-grid section img{
-    width: 34rem;
-    height: 30rem;
+.Grid1{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30rem;
+    width: 100%;
     align-items: center;
+
+}
+
+.Grid1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Grid2{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 30rem;
+    gap: 0rem;
+    width: 100%;
+
+}
+
+.Grid2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caja{
+    width: auto;
+    height: 30rem;
+}
+
+.video{
+    width: auto;
+    height: 30rem;
 }
 
 
@@ -472,6 +424,12 @@
     display: none;
 }
 
+.img2{
+    opacity: 50%;
+    height: 30rem;
+    display: flex;
+}
+
 .DataSeccion h3{
     padding-top: 3rem;
 }
@@ -534,6 +492,7 @@
     color: white;
     text-align: center;
     margin: 9rem;
+    z-index: 1;
 }
 
 .TituloFullContacto h1 {
@@ -567,6 +526,7 @@
     opacity: 50%;
     margin-left: 25%;
     margin-top: 0.9rem;
+
 }
 
 .formulario{
@@ -697,7 +657,7 @@
     display: flex;
     flex-direction: row;
     padding-top: 1.5rem;
-    padding-left: 8rem;
+    padding-left: 4rem;
     padding-bottom: 1rem;
     justify-content: flex-start;
     gap: 2rem;
@@ -725,6 +685,42 @@
     color: white;
 }
 
+.marketplaceDonar{
+    display: flex;
+    width: 100%;
+    height: 32rem;
+    background-color: #4A3EE5;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3rem;
+}
+
+.datamarketDonar{
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    flex-direction: column;
+}
+
+.datamarketDonar img{
+    display: flex;
+    width: 52rem;
+    height: auto;
+}
+
+.datamarketDonar h2{
+    display: flex;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+.datamarketDonar h5{
+    display: flex;
+    padding-left: 1rem;
+}
+
 .kickstarter{
     width: 2rem;
     padding-top: 1.5rem;
@@ -747,10 +743,44 @@
     align-items: center;
 }
 
+.Content_comentariosDonar{
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    flex-direction: column;
+    padding-left: 3.75rem;
+    background-color: #352BB9;
+    border-radius: 0rem;
+    width: 41.25rem;
+    height: 32rem;
+}
+
+.Content_comentariosDonar h2{
+    padding-top: 1.2rem;
+}
+
+.todos_comentariosDonar{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.6rem;
+}
+
+.comentarioDonar img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
 .todos_comentariosDonar{
     display: flex;
     padding-top: 1.6rem;
     gap: 1rem;
+}
+
+.separadorDonar{
+    padding-top: 2rem;
+    border: none;
 }
 
 .separador{
@@ -847,16 +877,6 @@ footer div a {
 
 @media  (max-width:1024px){
 
-    .navbar{
-        background-color: #131313;
-    }
-    
-    .navbar img{
-        width: 5.50rem;
-        margin-left: 1.25rem;
-        margin-top: .5rem;
-    }
-
     .banner{
         width: 100%;
         height: 15rem;
@@ -865,35 +885,6 @@ footer div a {
     .banner img{
         width: 100%;
         height: 20rem;
-        margin-top: 6rem;
-    }
-
-    .titulo {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        text-align: center;
-        margin-top: 4.2rem;
-    }
-    
-    .titulo1 {
-        font-family: "Poppins", sans-serif;
-        font-weight: 300;
-        font-size: 3.5rem;
-        margin-top: 1.8rem;
-        color: #6259ec;
-    }
-    
-    .titulo2 {
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        font-size: 3.5rem;
-        line-height: 0.5;
     }
 
     .Sec1{
@@ -931,6 +922,7 @@ footer div a {
         width: 30rem;
         margin: 1.5rem;
     }
+
     
     .marketplace{
         display: flex;
@@ -1048,19 +1040,6 @@ footer div a {
         padding: 0.1rem 0.5rem;
     }
     
-    .galeria-grid{
-        background-color: #070707;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        position: relative;
-    }
-    
-    .galeria-grid section img{
-        width: 24rem;
-        height: 24rem;
-        align-items: center;
-    }
 
     /* SOBRE ASTRONUS */
 
@@ -1106,7 +1085,6 @@ footer div a {
         font-family: "Poppins", sans-serif;
         font-weight: 600;
         font-size: 3rem;
-
     }
 
     .planeta{
@@ -1127,56 +1105,98 @@ footer div a {
         width: 100%;
         color: white;
         position: relative;
-        height: 10rem;
+        height: auto;
         display: flex;
     }
 
     .Sec1_SA h1{
-        padding-left: 3rem;
-        padding-top: 5rem;
+        padding-top: 4rem;
     }
 
     .Sec1_SA img{
         opacity: 50%;
         height: 10rem;
-        padding-left: 25rem;
+        padding-left: 257rem;
         display: none;
     }
 
     .DataSeccion{
         background-color: #070707;
         display: flex;
-        padding-top: 1.25rem;
         width: 100%;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .img1{
-        opacity: 50%;
-        height: 30rem;
-        display: flex;
+        height: auto;
+        flex-direction: column;
+        position: relative;
+        padding-bottom: 6rem;
     }
 
     .img2{
         opacity: 50%;
-        height: 30rem;
-        display: none;
+        height: auto;
+        width: auto;
+        display: flex;
     }
 
     .DataSeccion h3{
-        padding-top: 3rem;
-
+        padding: 1.25rem 4rem 0rem 4rem;
     }
 
     .DataSeccion p{
-        padding-right: 0rem;
+        padding: 1.25rem 4rem 0rem 4rem;
     }
 
-    .DataSeccion article{
-        padding-top: 3rem;
+    .galeria-container{
+        background-color: #070707;
+        width: 100%;
+        height: auto;
+    }
+
+    .Grid1{
+        padding-top: 0rem;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 22rem;
+        width: 100%;
+        align-items: center;
 
     }
+    
+    .Grid1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .Grid2{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25rem;
+        gap: 0rem;
+        width: 100%;
+    }
+    
+    .Grid2 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .caja{
+        width: auto;
+        height: 25rem;
+    }
+
+    .cajalast{
+        width: auto;
+        height: 25rem;
+        display: none;
+    }
+
+    .video{
+        width: auto;
+        height: 22rem;
+    }
+
 
     .descargarSobreAstronus{
         display: flex;
@@ -1190,7 +1210,6 @@ footer div a {
         flex-direction: column;
         justify-items: center;
         align-items: center;
-        padding-top: 7.25rem;
         padding-bottom: 7.25rem;
     }
 
@@ -1201,6 +1220,334 @@ footer div a {
         filter: drop-shadow(0 0 20px rgba(73, 62,   229, 0.479));
         border: none;
     }
+
+
+        /* CONTACTO */
+
+    .bannerContacto {
+        position: absolute;
+        width: 100%;
+    }
+
+    .bannerContacto img {
+        width: 100%;
+        height: 37rem;
+    }
+
+    .TituloFullContacto {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 20;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        margin: 9rem;
+    }
+
+    .TituloFullContacto h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        display: flex;
+        margin-top: 2rem;
+    }
+
+    .tituloContacto1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+    }
+
+    .destacado{
+        background-color: #4A3EE5;
+        padding: 0.1rem 0.5rem;
+    }
+
+    .Sec1_Contacto{
+        background-color: #070707;
+        width: 100%;
+        height: 42rem;
+    }
+
+    .Sec1_Contacto img{
+        height: 35rem;
+        opacity: 50%;
+        margin-left: 25%;
+        margin-top: 0.9rem;
+    }
+
+    .formulario{
+        position: relative;
+        display: flex;
+        background-color: #070707;
+        flex-direction: column;
+        padding-bottom: 8rem;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        padding-left: 0rem;
+    }
+
+    .form{
+        height: 3.2rem;
+        width: 38rem;
+        color: rgb(173, 173, 173);
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        background-color: transparent;
+        border: solid;
+        border-radius: 0.6rem;
+        border-color: #4A3EE5;
+        display: flex;
+        align-items: center;
+    }
+
+    .mensaje{
+        height: 14rem;
+        width: 38rem;
+        color: rgb(173, 173, 173);
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        background-color: transparent;
+        border: solid;
+        border-radius: 0.6rem;
+        border-color: #4A3EE5;
+        padding-left: 1.2rem;
+        padding-top: 1rem;
+        display: flex;
+        align-items: start;
+    }
+
+    .iconoform{
+        margin-right: 0.8rem;
+        width: 1.5rem;
+    }
+
+    .enviar{
+        height: 3.2rem;
+        width: 38rem;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        background-color: #4A3EE5;
+        border: solid;
+        border-radius: 0.6rem;
+        border-color: #4A3EE5;
+    }  
+
+
+        /* DONAR */
+
+    .bannerDonar {
+        position: relative;
+        width: 100%;
+    }
+
+    .bannerDonar img {
+        width: 100%;
+        height: 25rem;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .TituloDonarFull {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 20;
+        color: white;
+        text-align: center;
+        margin: 10rem;
+    }
+
+    .tituloDonar1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+    }
+
+    .btnDonarClick{
+        height: 2.5rem;
+        border: solid .125rem transparent;
+        background-color: #4A3EE5;
+        color: white;
+        border-radius: 1.25rem;
+        display: flex;
+        width: 10rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .satelite{
+        position: absolute;
+        top: 15%;
+        left: 40%;
+    }
+
+    .satelite img{
+        width: 25rem;
+        height: auto;
+        opacity: 60%;
+    }
+
+    .Sec1_Donar{
+        background-color: #070707;
+        display: flex;
+        flex-direction: row;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        justify-content: center;
+        gap: 2rem;
+        padding-left: 0rem;
+    }
+
+    .Sec1_Donar img{
+        width: 2rem;
+    }
+
+    .titulo_Donar{
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 2.2rem;
+        line-height: 1.5;
+        color: white;
+    }
+
+    .titulo_Donar2{
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 2.2rem;
+        line-height: 1.5;
+        color: white;
+    }
+
+    .marketplaceDonar{
+        display: flex;
+        width: 100%;
+        height: 60rem;
+        background-color: #4A3EE5;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0rem;
+        flex-direction: column;
+    }
+    
+    .datamarketDonar{
+        display: flex;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+    
+    .datamarketDonar img{
+        display: flex;
+        width: 41rem;
+        height: auto;
+    }
+    
+    .datamarketDonar h2{
+        display: flex;
+        padding-top: 2rem;
+        padding-left: 0rem;
+    }
+    
+    .datamarketDonar h5{
+        display: flex;
+        padding-left: 0rem;
+    }
+    
+    .DonarBTN{
+        background-color: #4A3EE5;
+        border: solid;
+        border-radius: 0.6rem;
+        border-color: #4A3EE5;
+        color: white;
+        width: 14rem;
+        height: 4rem;
+        margin-top: 3rem;
+    }
+    
+    .DonarBTN a{
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Content_comentariosDonar{
+        display: flex;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+        background-color: #352BB9;
+        border-radius: 0rem;
+        width: 100%;
+        height: 32rem;
+        padding: 2rem 2rem 2rem 2rem;
+        align-items: center;
+    }
+
+    .Content_comentariosDonar h2{
+        padding-top: 1.5rem;
+    }
+
+    .Content_comentariosDonar h3{
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+    
+    .todos_comentariosDonar{
+        display: flex;
+        flex-direction: row;
+        padding-top: 0.6rem;
+    }
+    
+    .comentarioDonar img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .comentarioDonar p{
+        padding-top: 0rem;
+    }
+    
+    .separadorDonar{
+        padding-top: 2rem;
+        border: none;
+    }
+    
+    .separador{
+        padding-top: 2rem;
+        border: none;
+    }
+    
+
+    .kickstarter{
+        width: 2rem;
+        padding-top: 1.5rem;
+    }
+
 
 
     footer{
@@ -1276,7 +1623,7 @@ footer div a {
     }
 
 }
-    
+
 
 @media (max-width: 480px){  
 
@@ -1288,7 +1635,6 @@ footer div a {
     .banner img{
         width: 100%;
         height: 10rem;
-        margin-top: 6rem;
     }
 
     .titulo {
@@ -1301,7 +1647,7 @@ footer div a {
         align-items: center;
         color: white;
         text-align: center;
-        margin-top: 14rem;
+        margin-top: 10rem;
     }
     
     .titulo1 {
@@ -1517,21 +1863,58 @@ footer div a {
         background-color: #4A3EE5;
         padding: 0.1rem 0.5rem;
     }
-    
-    .galeria-grid{
-        position: relative;
+
+    .galeria-container{
         background-color: #070707;
         width: 100%;
+        height: auto;
+    }
+
+    .Grid1{
+        padding-top: 2rem;
         display: grid;
         grid-template-columns: 100%;
+        grid-template-rows: 18rem;
+        width: 100%;
+        align-items: center;
+    
     }
     
-    .galeria-grid section img{
-        display: flex;
-        width: 24rem;
-        height: 24rem;
-        align-items: center;
-        justify-content: center;
+    .Grid1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .Grid2{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25rem;
+        gap: 0rem;
+        width: 100%;
+    
+    }
+    
+    .Grid2 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .caja{
+        width: auto;
+        height: 25rem;
+    }
+
+    .cajalast{
+        width: auto;
+        height: 25rem;
+        display: block;
+    }
+
+    .video{
+        width: auto;
+        height: 18rem;
     }
     
 
@@ -1540,8 +1923,7 @@ footer div a {
     .bannerSobreAstronus {
         position: relative;
         width: 100%;
-        height: 34rem;
-
+        height: 44rem;
     }
 
     .bannerSobreAstronus img {
@@ -1563,7 +1945,7 @@ footer div a {
         align-items: start;
         color: white;
         text-align: start;
-        width: 40rem;
+        width: 20rem;
         margin: 10rem 0rem 0rem 3rem;
     }
 
@@ -1574,13 +1956,14 @@ footer div a {
         line-height: 1.5;
         display: flex;
         margin-top: 2rem;
+
     }
 
     .tituloSobreAstronus1 {
         font-family: "Poppins", sans-serif;
         font-weight: 600;
         font-size: 3rem;
-
+        
     }
 
     .planeta{
@@ -1601,7 +1984,7 @@ footer div a {
         width: 100%;
         color: white;
         position: relative;
-        height: 10rem;
+        height: auto;
         display: flex;
 
     }
@@ -1623,26 +2006,23 @@ footer div a {
         display: flex;
         padding-top: 1.25rem;
         width: 100%;
+        
     }
 
     .DataSeccion img{
         opacity: 70%;
-
-
     }
 
     .DataSeccion h3{
         padding-top: 3rem;
-
     }
 
     .DataSeccion p{
-        padding-right: 0rem;
+        padding-right: 3rem;
     }
 
     .DataSeccion article{
         padding-top: 3rem;
-
     }
 
     .descargarSobreAstronus{
@@ -1657,8 +2037,8 @@ footer div a {
         flex-direction: column;
         justify-items: center;
         align-items: center;
-        padding-top: 7.25rem;
-        padding-bottom: 7.25rem;
+        padding-top: 4.25rem;
+        padding-bottom: 4.25rem;
     }
 
     .descargarSobreAstronus img{
@@ -1669,6 +2049,336 @@ footer div a {
         border: none;
     }
 
+    .descargarSobreAstronus h1{
+        text-align: center;
+    }
+
+
+    /* CONTACTO */
+
+    .bannerContacto {
+        position: absolute;
+        width: 100%;
+    }
+
+    .bannerContacto img {
+        width: 100%;
+        height: 37rem;
+    }
+
+    .TituloFullContacto {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 20;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        margin: 9rem;
+    }
+
+    .TituloFullContacto h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        display: flex;
+        margin-top: 2rem;
+    }
+
+    .tituloContacto1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+    }
+
+    .destacado{
+        background-color: #4A3EE5;
+        padding: 0.1rem 0.5rem;
+    }
+
+    .Sec1_Contacto{
+        background-color: #070707;
+        width: 100%;
+        height: 30rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Sec1_Contacto img{
+        height: 28rem;
+        opacity: 50%;
+        margin-left: 0%;
+        margin-top: 2.5rem;
+    }
+
+    .formulario{
+        position: relative;
+        display: flex;
+        background-color: #070707;
+        flex-direction: column;
+        padding-bottom: 8rem;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        padding-left: 0rem;
+    }
+
+    .form{
+        height: 3.2rem;
+        width: 22rem;
+        color: rgb(173, 173, 173);
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        background-color: transparent;
+        border: solid;
+        border-radius: 0.6rem;
+        border-color: #4A3EE5;
+        padding-left: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .mensaje{
+        height: 14rem;
+        width: 22rem;
+        color: rgb(173, 173, 173);
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        background-color: transparent;
+        border: solid;
+        border-radius: 0.6rem;
+        border-color: #4A3EE5;
+        padding-left: 1.2rem;
+        padding-top: 1rem;
+        display: flex;
+        align-items: start;
+    }
+
+    .iconoform{
+        margin-right: 0.8rem;
+        width: 1.5rem;
+    }
+
+    .enviar{
+        height: 3.2rem;
+        width: 22rem;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        background-color: #4A3EE5;
+        border: solid;
+        border-radius: 0.6rem;
+        border-color: #4A3EE5;
+    }  
+
+
+    /* DONAR */
+
+    .bannerDonar {
+        position: relative;
+        width: 100%;
+    }
+
+    .bannerDonar img {
+        width: 100%;
+        height: 22rem;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .TituloDonarFull {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 20;
+        color: white;
+        text-align: center;
+        padding: 10rem 0rem 0rem 0rem;
+        margin: 0rem;
+    }
+
+    .tituloDonar1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+
+    .btnDonarClick{
+        height: 2.5rem;
+        border: solid .125rem transparent;
+        background-color: #4A3EE5;
+        color: white;
+        border-radius: 1.25rem;
+        display: flex;
+        width: 10rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .satelite{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        display: none;
+    }
+
+    .Sec1_Donar{
+        background-color: #070707;
+        display: flex;
+        flex-direction: row;
+        padding-top: 1rem;
+        padding-left: 0rem;
+        padding-bottom: 1rem;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .Sec1_Donar img{
+        width: 1.8rem;
+    }
+
+    .titulo_Donar{
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        color: white;
+    }
+
+    .titulo_Donar2{
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        color: white;
+    }
+
+
+    .marketplaceDonar{
+        display: flex;
+        width: 100%;
+        height: 55rem;
+        background-color: #4A3EE5;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0rem;
+        flex-direction: column;
+    }
+    
+    .datamarketDonar{
+        display: flex;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .datamarketDonar img{
+        display: flex;
+        width: 23rem;
+        height: auto;
+        padding-top: 3rem;
+    }
+    
+    .datamarketDonar h2{
+        display: flex;
+        padding-top: 2rem;
+        padding-left: 0rem;
+    }
+    
+    .datamarketDonar h5{
+        display: flex;
+        padding-left: 0rem;
+    }
+    
+    .DonarBTN{
+        background-color: #4A3EE5;
+        border: solid;
+        border-radius: 0.6rem;
+        border-color: #4A3EE5;
+        color: white;
+        width: 14rem;
+        height: 4rem;
+        margin-top: 1rem;
+    }
+    
+    .DonarBTN a{
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0.2rem;
+    }
+    
+    .Content_comentariosDonar{
+        display: flex;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+        background-color: #352BB9;
+        border-radius: 0rem;
+        width: 100%;
+        height: 32rem;
+        padding: 0rem 2rem 2rem 2rem;
+        align-items: center;
+    }
+
+    .Content_comentariosDonar h2{
+        padding-top: 1.5rem;
+    }
+
+    .Content_comentariosDonar h3{
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+    
+    .todos_comentariosDonar{
+        display: flex;
+        flex-direction: row;
+        padding-top: 0.6rem;
+    }
+    
+    .comentarioDonar p{
+        padding-top: 0rem;
+    }
+    
+    .separadorDonar{
+        padding-top: 2rem;
+        border: none;
+    }
+    
+    .separador{
+        padding-top: 2rem;
+        border: none;
+    }
+    
+
+    .kickstarter{
+        width: 2rem;
+        padding-top: 1.5rem;
+    }
 
 
     footer{

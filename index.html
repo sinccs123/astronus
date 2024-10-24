@@ -5,31 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar"> <!--Menu-->
-            <div class="logo">
-                <img src="./img/logo.png" alt="logo astronus">
+
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo.png" alt="Logo Astronus" height="50">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Togglenavigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/galeria.html">GALERÍA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sobreastronus.html">SOBRE ASTRONUS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item btn btn-outline-primary">
+                            <a class="nav-link" href="./pages/donar.html">DONAR</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="menu">
-                <li class="OnInicio"><a href="#">INICIO</a></li>
-                <li><a href="./pages/galeria.html">GALERIA</a></li>
-                <li><a href="./pages/sobreastronus.html">SOBRE ASTRONUS</a></li>
-                <li><a href="./pages/contacto.html">CONTACTO</a></li>
-            </ul>
-            <a class="btnDonar" href="./pages/donar.html">DONAR</a>
         </nav>
     </header>
 
     <main>
         <div class="banner"> <!--PortadaBanner-->
             <img src="./img/NwBanner.jpg" alt="sujetovr">
-            <div class="titulo">
-                <h1 class="titulo1">ALCANZA</h1>
-                <h1 class="titulo2">LAS ESTRELLAS</h1>
-            </div>
         </div>
 
         <section class="Sec1"> <!--Seccion 1-->
@@ -41,17 +63,17 @@
         </section>
 
         <section class="Sec2"> <!--Tarjetas-->
-            <div class="card">
+            <div class="card bg-dark">
                 <img src="./img/accesibilidad.png" alt="icono accesibilidad">
                 <h2>Accesibilidad</h2>
                 <p>Siente la tranquilidad de vivir en el espacio ponele esto es lore para no tener que describir.</p>
             </div>
-            <div class="card">
+            <div class="card bg-dark">
                 <img src="./img/design.png" alt="icono diseño">
                 <h2>Diseño interactivo</h2>
                 <p>Siente la tranquilidad de vivir en el espacio ponele esto es lore para no tener que describir.</p>
             </div>
-            <div class="card">
+            <div class="card bg-dark">
                 <img src="./img/inmersion.png" alt="icono inmersion">
                 <h2>Inmersión total</h2>
                 <p>Siente la tranquilidad de vivir en el espacio ponele esto es lore para no tener que describir.</p>
@@ -122,5 +144,8 @@
             </div>
         </div>
     </footer> 
+
+    <!--Script Bootstrap-->
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>

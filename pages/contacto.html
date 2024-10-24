@@ -5,21 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar"> <!--Menu-->
-            <div class="logo">
-                <img src="../img/logo.png" alt="logo astronus">
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="../img/logo.png" alt="Logo Astronus" height="50">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Togglenavigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/galeria.html">GALERÍA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/sobreastronus.html">SOBRE ASTRONUS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item btn btn-outline-primary">
+                            <a class="nav-link" href="../pages/donar.html">DONAR</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="menu">
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="../pages/galeria.html">GALERIA</a></li>
-                <li><a href="../pages/sobreastronus.html">SOBRE ASTRONUS</a></li>
-                <li class="OnInicio"><a href="#">CONTACTO</a></li>
-            </ul>
-            <a class="btnDonar" href="../pages/donar.html">DONAR</a>
         </nav>
     </header>
 
@@ -28,7 +53,7 @@
         <div class="bannerContacto"> <!--PortadaBanner-->
             <img src="../img/bg.jpg" alt="fondo">
             <div class="TituloFullContacto">
-                <p class="tituloContacto1">CONTACTATE CON<span class="destacado">LA ESTACIÓN</span></p>
+                <p class="tituloContacto1">CONTACTATE CON LA<span class="destacado">ESTACIÓN</span></p>
             </div>
         </div>
         <section class="Sec1_Contacto">
@@ -58,16 +83,16 @@
         <img src="../img/logofooter.png" alt="logo astronus">
         <div class="enlaces">
             <h3>Enlaces de Interés</h3>
-            <a href="../index.html">Inicio</a>
+            <a href="#">Inicio</a>
             <a href="../pages/galeria.html">Galeria</a>
             <a href="../pages/sobreastronus.html">Sobre Astronus</a>
-            <a href="#">Contacto</a>
+            <a href="../pages/contacto.html">Contacto</a>
             <a href="../pages/donar.html">Donar</a>
         </div>
 
-        <div>
+        <div class="descarga-foot">
             <h3>Pruebalo Ahora</h3>
-            <a href="#">SteamVR</a><br>
+            <a href="#">SteamVR</a>
             <a href="#">Meta Quest Store(proximamente)</a>
         </div>
 
@@ -81,4 +106,7 @@
             </div>
         </div>
     </footer> 
+
+    <!--Script Bootstrap-->
+    <script src="../js/bootstrap.min.js"></script>
 </body>
