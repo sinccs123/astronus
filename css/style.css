@@ -44,8 +44,64 @@
 header{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 4.5rem;
+    background-color: #131313;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-dark .navbar-nav .nav-link { /*Botones Menu*/
+    color: white;
+}
+
+.nav-item {
+    margin: 0 1.5rem;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover { /*Hover Menu*/
+    color: #4A3EE5;
+}
+
+.nav-item.btn .nav-link { /*Boton Donar*/
+    color: white;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.nav-item.btn {  /*Margen Boton Donar*/
+    background-color: transparent;
+    border: 2px solid #4A3EE5;
+    color: white;
+    padding: 0.6rem 3rem;
+    border-radius: 5rem;
+
+}
+
+.nav-item.btn:hover, /*Hover Donar*/
+.nav-item.btn .nav-link:hover {
+    background-color: #4A3EE5;
+    color: white;
+}
+
+.active{
+    color: #4A3EE5 !important;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+}
+
+.activeDonar{
+    background-color: #4A3EE5 !important;
+    color: white !important;
+    border: solid 1 !important;
+    border-color: #4A3EE5 !important;
 }
 
 .banner{
@@ -62,24 +118,28 @@ header{
     background-color: #070707;
     display: flex;
     flex-direction: column;
-    padding: 13rem 7rem 2rem 7rem;
+    padding: 18rem 19rem 2rem 19rem;
+    align-items: start;
 }
 
 .Sec1 img{
     width: 25rem;
+    padding-left: 4rem;
+    margin-left: 18rem;
+    padding-top: 2rem;
 }
 
 .Sec1 div{
     position: absolute;
-    left: 50rem;
+    left: 40rem;
     filter: drop-shadow(0 0 80px rgba(73, 62, 229, 0.479));
 }
 
 .Sec1 h1{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 3.2rem;
-    line-height: 4.5rem;
+    font-size: 2.3rem;
+    line-height: 3.5rem;
     color: white;
     width: 80%;
 }
@@ -90,7 +150,8 @@ header{
     font-weight: 500;
     font-size: 1rem;
     margin-top: 2rem;
-    width: 50%;
+    width: 30%;
+    text-align: start;
 }
 
 .Sec2{
@@ -108,12 +169,11 @@ header{
     justify-content: center;
 }
 
-.card{
+.cardSec2{
     background-color: #171717;
     width: 22rem;
     height: 23rem;
-    border: solid;
-    border-color: white;
+    border: none;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -121,11 +181,11 @@ header{
     align-items: center;
     justify-content: center;
     padding: 1.25rem;
-    margin: 2rem;
+    margin: 4rem;
     margin-top: 0rem;
 }
 
-.card img{
+.cardSec2 img{
     width: 4rem;
     height: 4rem;
     margin-left: 0.5rem;
@@ -133,7 +193,7 @@ header{
     opacity: 80%;
 }
 
-.card h2{
+.cardSec2 h2{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 1.4rem;
@@ -141,7 +201,7 @@ header{
     margin-top: 2rem;
 }
 
-.card p{
+.cardSec2 p{
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -156,6 +216,7 @@ header{
     background-color: #4A3EE5;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .datamarket{
@@ -175,11 +236,19 @@ header{
     display: flex;
     padding-top: 2rem;
     padding-left: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: white;
 }
 
 .datamarket h5{
     display: flex;
     padding-left: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
 }
 
 .Content_comentarios{
@@ -193,18 +262,50 @@ header{
     background-color: #352BB9;
     border-radius: 1.125rem;
     width: 51.25rem;
-    height: 23.75rem;
+    height: 30rem;
     padding-left: 1.25rem;
 }
 
 .Content_comentarios h2{
     padding-top: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.Content_comentarios p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
 }
 
 .todos_comentarios{
     display: flex;
     flex-direction: column;
     padding-top: 0.6rem;
+}
+
+.todos_comentarios h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.todos_comentarios h5{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+}
+
+.todos_comentarios p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
 }
 
 .comentario img{
@@ -293,16 +394,15 @@ header{
 .Grid1{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 30rem;
+    grid-template-rows: auto;
     width: 100%;
+    height: auto;
     align-items: center;
-
 }
 
-.Grid1 img{
+.Grid1 div{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
 }
 
 .Grid2{
@@ -326,7 +426,7 @@ header{
 }
 
 .video{
-    width: auto;
+    width: 100%;
     height: 30rem;
 }
 
@@ -537,7 +637,7 @@ header{
     padding-bottom: 8rem;
     align-items: start;
     gap: 1.5rem;
-    padding-left: 12rem;
+    padding-left: 0rem;
 }
 
 .form{
@@ -552,7 +652,7 @@ header{
     border: solid;
     border-radius: 0.6rem;
     border-color: #4A3EE5;
-    padding-left: 1.2rem;
+    padding-left: 0rem;
     display: flex;
     align-items: center;
 }
@@ -814,7 +914,7 @@ footer{
     position: absolute;
     background-color: #131313;
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1rem;
     color: white;
     margin: 0 auto;
@@ -845,11 +945,24 @@ footer div a {
     
 }
 
+.enlaces h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: white;
+}
+
 .descarga-foot a{
     display: flex;
     flex-direction: column;
-    margin-top: 0.2rem;
-    
+    margin-top: 0.2rem;   
+}
+
+.descarga-foot h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: white;
 }
 
 .RedesSociales{
@@ -866,6 +979,10 @@ footer div a {
 
 .RedesSociales h3{
     margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: white;
 }
 
 .iconos{
@@ -873,64 +990,79 @@ footer div a {
     gap: 10px;
 }
 
-
-
-@media  (max-width:1024px){
-
+@media (max-width: 1440px) {
+    
     .banner{
+        flex-direction: column;
+        display: flex;
         width: 100%;
-        height: 15rem;
+        height: auto;
+        flex-wrap: wrap;
     }
 
     .banner img{
+        display: flex;
         width: 100%;
-        height: 20rem;
+        height: auto;
+        flex-wrap: wrap;
     }
 
     .Sec1{
-        padding-top: 14rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: #070707;
+        padding: 2rem 4rem 4rem 4rem;
+        justify-content: center;
+        gap: 4rem;
+        
     }
 
     .Sec1 div{
-        left: 20rem;
+        display: flex;
+        position: absolute;
+        left: 18rem;
+        filter: drop-shadow(0 0 80px rgba(73, 62, 229, 0.479));
     }
-
+    
     .Sec1 img{
-        width: 15rem;
-        margin-top: 20rem;
-        margin-left: 8rem;
+        width: 17rem;
+        padding-left: 0rem;
+        margin-left: 29rem;
+        padding-top: 8rem;
+        
     }
 
     .Sec1 h1{
         font-family: "Poppins", sans-serif;
         font-weight: 500;
-        font-size: 3rem;
-        line-height: 4.5rem;
+        font-size: 2.3rem;
+        line-height: 3.5rem;
         color: white;
-        width: 100%;
+        width: 40%;
+        padding: 0rem;
     }
     
-    .Sec2{
-        height: 80rem;
-        flex-direction: column;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+    .Sec1 p{
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        margin-top: 2rem;
+        width: 30%;
+        text-align: start;
     }
 
-    .card{
-        margin-top: 0rem;
-        width: 30rem;
-        margin: 1.5rem;
-    }
-
-    
     .marketplace{
         display: flex;
         width: 100%;
         background-color: #4A3EE5;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     
     .datamarket{
@@ -944,7 +1076,191 @@ footer div a {
     
     .datamarket img{
         display: flex;
-        width: 45rem;
+    }
+    
+    .datamarket h2{
+        display: flex;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    .datamarket h5{
+        display: flex;
+        padding-left: 2rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        
+    }
+    
+    .Content_comentarios{
+        display: flex;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+        background-color: #352BB9;
+        border-radius: 1.125rem;
+        width: 48rem;
+        height: 31.8rem;
+        padding-left: 1.25rem;
+    }
+    
+    .Content_comentarios h2{
+        padding-top: 1.2rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    .Content_comentarios p{
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+    }
+    
+    .todos_comentarios{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.6rem;
+    }
+    
+    .todos_comentarios h3{
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    .todos_comentarios h5{
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+    }
+    
+    .todos_comentarios p{
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        color: white;
+    }
+    
+    .comentario img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+
+}
+
+@media  (max-width:1024px){
+
+    .banner{
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .banner img{
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .Sec1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: #070707;
+        padding: 2rem 4rem 4rem 4rem;
+        justify-content: center;
+        gap: 8rem;
+    }
+    
+    .Sec1 img{
+        width: 25rem;
+        padding-left: 0rem;
+        margin-left: 0rem;
+        padding-top: 0rem;
+    }
+    
+    .Sec1 div{
+        display: none;
+        position: static;
+        left: 0rem;
+        filter: drop-shadow(0 0 80px rgba(73, 62, 229, 0.479));
+    }
+    
+    .Sec1 h1{
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 2.3rem;
+        line-height: 3.5rem;
+        color: white;
+        width: 40%;
+        padding: 0rem;
+    }
+    
+    .Sec1 p{
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        margin-top: 2rem;
+        width: 30%;
+        text-align: start;
+    }
+    
+    .Sec2{
+        height: 80rem;
+        flex-direction: column;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        gap: 2rem;
+    }
+
+    .cardSec2{
+        margin-top: 0rem;
+        width: 30rem;
+        margin: 1.5rem;
+    }
+
+    
+    .marketplace{
+        display: flex;
+        width: 100%;
+        background-color: #4A3EE5;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    
+    .datamarket{
+        display: flex;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+    }
+    
+    .datamarket img{
+        display: flex;
+        width: 40rem;
         height: auto;
     }
     
@@ -959,6 +1275,10 @@ footer div a {
         padding-left: 2rem;
     }
     
+    .Content_comentarios h2{
+        padding-top: 1.2rem;
+    }
+    
     .Content_comentarios{
         display: flex;
         font-family: "Poppins", sans-serif;
@@ -969,14 +1289,10 @@ footer div a {
         background-color: #352BB9;
         border-radius: 1.125rem;
         width: 90%;
-        height: 26rem;
+        height: auto;
         margin-bottom: 3rem;
     }
-    
-    .Content_comentarios h2{
-        padding-top: 1.2rem;
-    }
-    
+
     .todos_comentarios{
         display: flex;
         flex-direction: column;
@@ -1625,6 +1941,196 @@ footer div a {
 }
 
 
+@media (max-width: 720px) {
+
+
+    .banner{
+        width: 100%;
+        height: auto;
+    }
+
+    .banner img{
+        width: 100%;
+        height: auto;
+    }
+
+    .Sec1{
+        background-color: #070707;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 5rem 0rem 5rem;
+        gap: 0rem;
+        align-items: center;
+    }
+
+    
+    .Sec1 img{
+        display: none;
+    }
+
+    .Sec1 h1{
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        color: white;
+        width: 100%;
+        padding-top: 2rem;
+    }
+    
+    .Sec1 p{
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .marketplace{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #4A3EE5;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .datamarket{
+        display: flex;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+    }
+    
+    .datamarket img{
+        display: flex;
+        width: 30rem;
+        height: auto;
+    }
+
+    .Content_comentarios{
+        display: flex;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+        background-color: #352BB9;
+        border-radius: 1.125rem;
+        width: 90%;
+        height: auto;
+        margin-bottom: 3rem;
+    }
+    
+    .Content_comentarios h2{
+        padding-top: 1.2rem;
+    }
+    
+    .todos_comentarios{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.6rem;
+        padding-bottom: 1rem;
+        width: 100%;
+    }
+
+    .Sec2{
+        height: 70rem;
+        flex-direction: column;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+        gap: 2rem;
+    }
+
+    .cardSec2{
+        width: 20rem;
+        margin: 1rem;
+        box-shadow: 0 0 20px 5px rgba(73, 62, 229, 0.479);
+    }
+
+    footer{
+        position: absolute;
+        background-color: #131313;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+    }
+    
+    footer img{
+        width: 6rem;
+        height: 6rem;
+        order: 1;
+    }
+    
+    .enlaces{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        margin-top: 3rem;
+        order: 2;
+    }
+
+    footer div a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .descarga-foot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        order: 3;
+        width: 100%;
+    }
+
+    .descarga-foot a{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.2rem;
+        justify-content: center;
+
+    }
+
+    .RedesSociales{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        order: 4;
+    }
+
+    .RedesSociales h3{
+        display: flex;
+        margin-bottom: 10px;
+    }
+    
+    .iconos{
+        padding-top: 0.5rem;
+        display: flex;
+        gap: 2.5rem;
+        flex-direction: row;
+    }
+
+}
+
+
+
 @media (max-width: 480px){  
 
     .banner{
@@ -1634,35 +2140,7 @@ footer div a {
 
     .banner img{
         width: 100%;
-        height: 10rem;
-    }
-
-    .titulo {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        text-align: center;
-        margin-top: 10rem;
-    }
-    
-    .titulo1 {
-        font-family: "Poppins", sans-serif;
-        font-weight: 300;
-        font-size: 2.7rem;
-        margin-top: 1.8rem;
-        color: #6259ec;
-    }
-    
-    .titulo2 {
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        font-size: 2.7rem;
-        line-height: 0.5;
+        height: auto;
     }
 
     .Sec1{
@@ -1670,16 +2148,13 @@ footer div a {
         display: flex;
         width: 100%;
         flex-direction: column;
-        padding: 12rem 2rem 0rem 2rem;
+        justify-content: center;
+        padding: 3rem 5rem 0rem 5rem;
+        gap: 0rem;
     }
     
     .Sec1 img{
         display: none;
-    }
-    
-    .Sec1 div{
-        position: absolute;
-        filter: drop-shadow(0 0 80px rgba(73, 62, 229, 0.479));
     }
 
     .Sec1 h1{
@@ -1706,14 +2181,16 @@ footer div a {
         flex-direction: column;
         padding-top: 3rem;
         padding-bottom: 4rem;
+        gap: 2rem;
     }
 
-    .card{
+    .cardSec2{
         width: 20rem;
         margin: 1rem;
+        box-shadow: 0 0 20px 5px rgba(73, 62, 229, 0.479);
     }
 
-    .card p{
+    .cardSec2 p{
         color: white;
         font-family: "Poppins", sans-serif;
         font-weight: 500;
@@ -1724,20 +2201,20 @@ footer div a {
 
     .marketplace{
         display: flex;
+        flex-direction: column;
         width: 100%;
         background-color: #4A3EE5;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
     }
-    
+
     .datamarket{
         display: flex;
+        flex-direction: column;
         font-family: "Poppins", sans-serif;
         font-weight: 500;
         font-size: 1rem;
         color: white;
-        flex-direction: column;
     }
     
     .datamarket img{
@@ -1830,19 +2307,18 @@ footer div a {
     }
     
     .TituloGaleriaFull {
+        display: flex;
+        flex-direction: column;
         top: 0;
         left: 0;
         right: 0;
         bottom: 20;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: start;
         color: white;
         text-align: start;
-        margin: 10rem 0rem 8rem 2rem;
+        margin: 5rem 0rem 8rem 2rem;
         width: 20rem;
-
     }
     
     .TituloGaleriaFull h1 {
