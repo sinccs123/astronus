@@ -63,6 +63,30 @@ header{
     margin: 0 auto;
 }
 
+.nav-link {
+    position: relative;
+    color: #4A3EE5;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    background-color: #4A3EE5;
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+    border-radius: 3rem 3rem 0rem 0rem;
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
+
 .navbar-dark .navbar-nav .nav-link:hover { /*Hover Menu*/
     color: #4A3EE5;
 }
@@ -636,8 +660,12 @@ header{
     flex-direction: column;
     padding-bottom: 8rem;
     align-items: start;
-    gap: 1.5rem;
+    gap: 0rem;
     padding-left: 0rem;
+}
+
+.formulario h5{
+    padding-top: 2rem;
 }
 
 .form{
@@ -655,6 +683,29 @@ header{
     padding-left: 0rem;
     display: flex;
     align-items: center;
+}
+
+.form_mensaje{
+    height: 10rem;
+    width: 34rem;
+    color: rgb(173, 173, 173);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: transparent;
+    border: solid;
+    border-radius: 0.6rem;
+    border-color: #4A3EE5;
+    padding-left: 0rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-control {
+    height: 100%;
+    resize: none;
+    padding-top: 1rem;
 }
 
 .mensaje{
@@ -906,7 +957,6 @@ header{
     line-height: 1.5;
     color: white;
 }
-
 
 /* FOOTER */
 
@@ -1604,15 +1654,18 @@ footer div a {
         background-color: #070707;
         flex-direction: column;
         padding-bottom: 8rem;
-        align-items: center;
-        justify-content: center;
-        gap: 1.5rem;
+        align-items: start;
+        gap: 0rem;
         padding-left: 0rem;
     }
-
+    
+    .formulario h5{
+        padding-top: 2rem;
+    }
+    
     .form{
         height: 3.2rem;
-        width: 38rem;
+        width: 34rem;
         color: rgb(173, 173, 173);
         font-family: "Poppins", sans-serif;
         font-weight: 500;
@@ -1622,13 +1675,37 @@ footer div a {
         border: solid;
         border-radius: 0.6rem;
         border-color: #4A3EE5;
+        padding-left: 0rem;
         display: flex;
         align-items: center;
     }
-
+    
+    .form_mensaje{
+        height: 10rem;
+        width: 34rem;
+        color: rgb(173, 173, 173);
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        background-color: transparent;
+        border: solid;
+        border-radius: 0.6rem;
+        border-color: #4A3EE5;
+        padding-left: 0rem;
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .form-control {
+        height: 100%;
+        resize: none;
+        padding-top: 1rem;
+    }
+    
     .mensaje{
         height: 14rem;
-        width: 38rem;
+        width: 34rem;
         color: rgb(173, 173, 173);
         font-family: "Poppins", sans-serif;
         font-weight: 500;
@@ -1643,6 +1720,7 @@ footer div a {
         display: flex;
         align-items: start;
     }
+    
 
     .iconoform{
         margin-right: 0.8rem;
@@ -2053,6 +2131,594 @@ footer div a {
         box-shadow: 0 0 20px 5px rgba(73, 62, 229, 0.479);
     }
 
+    .bannerGaleria {
+    width: 100%;
+    height: 37rem;
+}
+
+.bannerGaleria img {
+    width: 100%;
+    height: 37rem;
+}
+
+.TituloGaleriaFull {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: white;
+    text-align: start;
+    margin: 12rem 0rem 0rem 8rem;
+    width: 40rem;
+}
+
+.TituloGaleriaFull h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.titulogaleria1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.destacado{
+    background-color: #4A3EE5;
+    padding: 0.1rem 0.5rem;
+}
+
+
+/*GALERIA*/
+    .bannerGaleria {
+        width: 100%;
+        height: 15rem;
+    }
+    
+    .bannerGaleria img {
+        width: 100%;
+        height: 45rem;
+    }
+    
+    .TituloGaleriaFull {
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: start;
+        margin: 20rem 0rem 0rem 0rem;
+        width: 100%;
+    }
+    
+    .TituloGaleriaFull h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        height: auto;
+        width: 80%;
+        margin-top: 2rem;
+    }
+    
+    .titulogaleria1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+        width: 80%;
+    }
+    
+    .destacado{
+        background-color: #4A3EE5;
+        padding: 0.1rem 0.5rem;
+    }
+
+    .galeria-container{
+        background-color: #070707;
+        width: 100%;
+        height: auto;
+    }
+
+    .Grid1{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0rem;
+        width: 100%;
+        height: 58rem;
+        align-items: center;
+    }
+    
+    
+    .Grid2{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25rem;
+        gap: 0rem;
+        width: 100%;
+    }
+    
+    .Grid2 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .caja{
+        width: auto;
+        height: 25rem;
+    }
+
+    .cajalast{
+        width: auto;
+        height: 25rem;
+        display: block;
+    }
+
+    .video{
+        padding-top: 81rem;
+        width: auto;
+        height: 18rem;
+    }
+    
+    /* SOBRE ASTRONUS */
+
+    .bannerSobreAstronus {
+        position: relative;
+        width: 100%;
+        height: 44rem;
+    }
+
+    .bannerSobreAstronus img {
+        width: 100%;
+        height: 44rem;
+        display: flex;
+        position: relative;
+    }
+
+    .TituloSobreAstronusFull {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 20;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        color: white;
+        text-align: start;
+        width: 20rem;
+        margin: 10rem 0rem 0rem 3rem;
+    }
+
+    .TituloSobreAstronusFull h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        display: flex;
+        margin-top: 2rem;
+
+    }
+
+    .tituloSobreAstronus1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+        
+    }
+
+    .planeta{
+        position: absolute;
+        top: 14%;
+        left: 60%;
+        display: none;
+    }
+
+    .planeta img{
+        width: 28rem;
+        height: 28rem;
+        opacity: 60%;
+    }
+
+    .Sec1_SA{
+        background-color: #070707;
+        width: 100%;
+        color: white;
+        position: relative;
+        height: auto;
+        display: flex;
+
+    }
+
+    .Sec1_SA h1{
+        padding-left: 3rem;
+        padding-top: 5rem;
+    }
+
+    .Sec1_SA img{
+        opacity: 50%;
+        height: 30rem;
+        padding-left: 25rem;
+        display: none;
+    }
+
+    .DataSeccion{
+        background-color: #070707;
+        display: flex;
+        padding-top: 1.25rem;
+        width: 100%;
+        
+    }
+
+    .DataSeccion img{
+        opacity: 70%;
+    }
+
+    .DataSeccion h3{
+        padding-top: 3rem;
+    }
+
+    .DataSeccion p{
+        padding-right: 3rem;
+    }
+
+    .DataSeccion article{
+        padding-top: 3rem;
+    }
+
+    .descargarSobreAstronus{
+        display: flex;
+        background-color: #0D0D0D;
+        width: 100%;
+        height: auto;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        padding-top: 4.25rem;
+        padding-bottom: 4.25rem;
+    }
+
+    .descargarSobreAstronus img{
+        display: flex;
+        width: 20rem;
+        margin-top: 2.25rem;
+        filter: drop-shadow(0 0 20px rgba(73, 62,   229, 0.479));
+        border: none;
+    }
+
+    .descargarSobreAstronus h1{
+        text-align: center;
+    }
+
+    /* CONTACTO */
+
+    .bannerContacto {
+        position: absolute;
+        width: 100%;
+    }
+
+    .bannerContacto img {
+        width: 100%;
+        height: 37rem;
+    }
+
+    .TituloFullContacto {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 20;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        margin: 9rem;
+    }
+
+    .TituloFullContacto h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        display: flex;
+        margin-top: 2rem;
+    }
+
+    .tituloContacto1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+    }
+
+    .destacado{
+        background-color: #4A3EE5;
+        padding: 0.1rem 0.5rem;
+    }
+
+    .Sec1_Contacto{
+        background-color: #070707;
+        width: 100%;
+        height: 30rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Sec1_Contacto img{
+        height: 28rem;
+        opacity: 50%;
+        margin-left: 0%;
+        margin-top: 2.5rem;
+    }
+
+    .formulario{
+        width: 22rem;
+        position: relative;
+        display: flex;
+        background-color: #070707;
+        flex-direction: column;
+        padding-bottom: 8rem;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        padding-left: 0rem;
+        padding-top: 4rem;
+    }
+
+    .mensaje{
+        height: 14rem;
+        width: 22rem;
+        color: rgb(173, 173, 173);
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        background-color: transparent;
+        border: solid;
+        border-radius: 0.6rem;
+        border-color: #4A3EE5;
+        padding-left: 1.2rem;
+        padding-top: 1rem;
+        display: flex;
+        align-items: start;
+    }
+
+    .iconoform{
+        margin-right: 0.8rem;
+        width: 1.5rem;
+    }
+
+    .enviar{
+        height: 3.2rem;
+        width: 22rem;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5;
+        background-color: #4A3EE5;
+        border: solid;
+        border-radius: 0.6rem;
+        border-color: #4A3EE5;
+    }  
+
+    /* DONAR */
+
+    .bannerDonar {
+        position: relative;
+        width: 100%;
+    }
+
+    .bannerDonar img {
+        width: 100%;
+        height: 22rem;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .TituloDonarFull {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 20;
+        color: white;
+        text-align: center;
+        padding: 10rem 0rem 0rem 0rem;
+        margin: 0rem;
+    }
+
+    .tituloDonar1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+
+    .btnDonarClick{
+        height: 2.5rem;
+        border: solid .125rem transparent;
+        background-color: #4A3EE5;
+        color: white;
+        border-radius: 1.25rem;
+        display: flex;
+        width: 10rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .satelite{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        display: none;
+    }
+
+    .Sec1_Donar{
+        background-color: #070707;
+        display: flex;
+        flex-direction: row;
+        padding-top: 1rem;
+        padding-left: 0rem;
+        padding-bottom: 1rem;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .Sec1_Donar img{
+        width: 1.8rem;
+    }
+
+    .titulo_Donar{
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        color: white;
+    }
+
+    .titulo_Donar2{
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        color: white;
+    }
+
+
+    .marketplaceDonar{
+        display: flex;
+        width: 100%;
+        height: 55rem;
+        background-color: #4A3EE5;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0rem;
+        flex-direction: column;
+    }
+    
+    .datamarketDonar{
+        display: flex;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .datamarketDonar img{
+        display: flex;
+        width: 23rem;
+        height: auto;
+        padding-top: 3rem;
+    }
+    
+    .datamarketDonar h2{
+        display: flex;
+        padding-top: 2rem;
+        padding-left: 0rem;
+    }
+    
+    .datamarketDonar h5{
+        display: flex;
+        padding-left: 0rem;
+    }
+    
+    .DonarBTN{
+        background-color: #4A3EE5;
+        border: solid;
+        border-radius: 0.6rem;
+        border-color: #4A3EE5;
+        color: white;
+        width: 14rem;
+        height: 4rem;
+        margin-top: 1rem;
+    }
+    
+    .DonarBTN a{
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0.2rem;
+    }
+    
+    .Content_comentariosDonar{
+        display: flex;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+        background-color: #352BB9;
+        border-radius: 0rem;
+        width: 100%;
+        height: 32rem;
+        padding: 0rem 2rem 2rem 2rem;
+        align-items: center;
+    }
+
+    .Content_comentariosDonar h2{
+        padding-top: 1.5rem;
+    }
+
+    .Content_comentariosDonar h3{
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+    
+    .todos_comentariosDonar{
+        display: flex;
+        flex-direction: row;
+        padding-top: 0.6rem;
+    }
+    
+    .comentarioDonar p{
+        padding-top: 0rem;
+    }
+    
+    .separadorDonar{
+        padding-top: 2rem;
+        border: none;
+    }
+    
+    .separador{
+        padding-top: 2rem;
+        border: none;
+    }
+    
+
+    .kickstarter{
+        width: 2rem;
+        padding-top: 1.5rem;
+    }
+
+
     footer{
         position: absolute;
         background-color: #131313;
@@ -2258,7 +2924,6 @@ footer div a {
         padding-top: 0.6rem;
         padding-bottom: 2rem;
         width: 90%;
-
     }
     
     .comentario img{
@@ -2298,7 +2963,7 @@ footer div a {
     /*GALERIA*/
     .bannerGaleria {
         width: 100%;
-        height: 45rem;
+        height: 15rem;
     }
     
     .bannerGaleria img {
@@ -2312,13 +2977,14 @@ footer div a {
         top: 0;
         left: 0;
         right: 0;
-        bottom: 20;
+        bottom: 0;
         justify-content: center;
         align-items: start;
         color: white;
         text-align: start;
         margin: 5rem 0rem 8rem 2rem;
         width: 20rem;
+        padding-top: 5rem;
     }
     
     .TituloGaleriaFull h1 {
@@ -2326,7 +2992,7 @@ footer div a {
         font-weight: 500;
         font-size: 1rem;
         line-height: 1.5;
-        height: auto;
+        height: 0rem;
     }
     
     .titulogaleria1 {
@@ -2347,19 +3013,12 @@ footer div a {
     }
 
     .Grid1{
-        padding-top: 2rem;
+        padding-top: 6rem;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 18rem;
+        grid-template-rows: 10rem;
         width: 100%;
-        align-items: center;
-    
-    }
-    
-    .Grid1 img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: 60rem;
     }
     
     .Grid2{
@@ -2368,7 +3027,6 @@ footer div a {
         grid-template-rows: 25rem;
         gap: 0rem;
         width: 100%;
-    
     }
     
     .Grid2 img{
@@ -2604,22 +3262,7 @@ footer div a {
         padding-left: 0rem;
     }
 
-    .form{
-        height: 3.2rem;
-        width: 22rem;
-        color: rgb(173, 173, 173);
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        font-size: 1rem;
-        line-height: 1.5;
-        background-color: transparent;
-        border: solid;
-        border-radius: 0.6rem;
-        border-color: #4A3EE5;
-        padding-left: 1.2rem;
-        display: flex;
-        align-items: center;
-    }
+
 
     .mensaje{
         height: 14rem;
