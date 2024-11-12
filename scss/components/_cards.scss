@@ -1,0 +1,43 @@
+@use "../utilities/map";
+@use "../base/font";
+
+.cardSec2{
+    font-family: 'Poppins', sans-serif;
+    background-color: #171717;
+    width: 22rem;
+    height: 23rem;
+    border: none;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px 10px rgba(73, 62, 229, 0.479);
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    margin: 4rem;
+    margin-top: 0rem;
+
+    img{
+        width: 4rem;
+        height: 4rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        opacity: 80%;
+    }
+
+    h2{
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: map-get(map.$color, primario);
+        margin-top: 2rem;
+    }
+
+    p{
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: white;    
+        margin-top: 1rem;
+        width: 80%;
+    }
+}

@@ -1,0 +1,50 @@
+@use "../utilities/map";
+@use "../base/font";
+
+.bannerDonar{
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    width: 100%;
+
+    img{
+        display: flex;
+        width: 100%;
+        height: auto;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .TituloDonarFull {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 20;
+        color: white;
+        text-align: center;
+        margin: 10rem;
+    }
+
+    .tituloDonar1 {
+        font-weight: 600;
+        font-size: 3rem;
+    }
+
+    .destacado{
+        background-color: #4A3EE5;
+        padding: 0.1rem 0.5rem;
+    }
+
+    .satelite{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+
+        img{
+            width: 32rem;
+            height: auto;
+            opacity: 60%;
+        }
+    }
+}

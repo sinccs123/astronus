@@ -1,0 +1,23 @@
+@use "../utilities/map";
+@use "../base/font";
+
+.Sec1_Donar{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    background-color: #070707;
+    flex-direction: row;
+    padding-top: 1.5rem;
+    padding-left: 4rem;
+    padding-bottom: 1rem;
+    justify-content: flex-start;
+    gap: 2rem;
+    
+    img{
+        width: 2rem;
+        margin-bottom: 0.6rem;
+    }
+
+    h1{
+        color: white;
+    }
+}

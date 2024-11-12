@@ -1,0 +1,82 @@
+@use "../utilities/map";
+@use "../base/font";
+
+header{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    background-color: map-get(map.$color, bkprimario);
+    line-height: 4.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: white;
+    }
+
+    .nav-item {
+        margin: 0 1.5rem;
+    }
+
+    .navbar-nav {
+        margin: 0 auto;
+    }
+
+    .nav-link{
+        position: relative;
+        color: #4A3EE5;
+        text-decoration: none;
+        padding: 5px 0;
+    }
+    .nav-link::after{
+        font-family: "Poppins", sans-serif;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 4px;
+        background-color: #4A3EE5;
+        transition: width 0.3s ease;
+        transform: translateX(-50%);
+        border-radius: 3rem 3rem 0rem 0rem;
+    }
+
+    .nav-link:hover::after, .nav-link.active::after {
+        width: 100%;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+        font-weight: 600;
+        color: #4A3EE5;
+    }
+    
+    .nav-item.btn .nav-link {
+        color: white;
+        padding: 0;
+    }
+
+    .nav-item.btn {
+        background-color: transparent;
+        border: 2px solid #4A3EE5;
+        color: white;
+        padding: 0.6rem 3rem;
+        border-radius: 5rem;
+    }
+
+    .nav-item.btn:hover, .nav-item.btn .nav-link:hover {
+        background-color: #4A3EE5;
+        color: white;
+    }
+
+    .active{
+        font-weight: 600;
+        color: #4A3EE5 !important;
+    }
+
+    .activeDonar{
+        background-color: #4A3EE5 !important;
+        color: white !important;
+        border: solid 1 !important;
+        border-color: #4A3EE5 !important;
+    }
+}

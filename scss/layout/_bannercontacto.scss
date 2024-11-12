@@ -1,0 +1,46 @@
+@use "../utilities/map";
+@use "../base/font";
+
+.bannerContacto{
+    position: absolute;
+    width: 100%;
+
+    img{
+        width: 100%;
+        height: 37rem;
+    }
+
+    .TituloFullContacto {
+        font-family: "Poppins", sans-serif;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 20;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        margin: 9rem;
+        z-index: 1;
+
+        h1 {
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-top: 2rem;
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 3rem;
+        }
+
+        .destacado{
+            background-color: map-get(map.$color, primario);
+            padding: 0.1rem 0.5rem;
+        }
+    }
+}

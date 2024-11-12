@@ -1,0 +1,99 @@
+@use "../utilities/map";
+@use "../base/font";
+
+.marketplaceDonar{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    width: 100%;
+    height: 32rem;
+    background-color: #4A3EE5;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3rem;
+
+    .datamarketDonar{
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+
+        img{
+            width: 48rem;
+            height: auto;
+        }
+
+        h2{
+            padding-top: 2rem;
+            padding-left: 1rem;
+        }
+
+        h5{
+            padding-left: 1rem;
+        }
+    }
+
+    .Content_comentariosDonar{
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        flex-direction: column;
+        padding-left: 3.75rem;
+        background-color: #352BB9;
+        border-radius: 0rem;
+        width: 40rem;
+        height: 32rem;
+
+        img{
+            padding-top: 4rem;
+            width: 3rem;
+        }
+
+        h2{
+            font-weight: 500;
+            font-size: 1.8rem;
+            padding-top: 1.2rem;
+        }
+
+        .todos_comentariosDonar{
+            display: flex;
+            flex-direction: row;
+            padding-top: 1.6rem;
+            gap: 1rem;
+
+            h3{
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+
+            p{
+                font-size: 1rem;
+                font-weight: 400;
+            }
+        }
+
+        .comentarioDonar img{
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        .DonarBTN{
+            background-color: #4A3EE5;
+            border: solid;
+            border-radius: 0.6rem;
+            border-color: #4A3EE5;
+            width: 14rem;
+            height: 4rem;
+            margin-top: 1.2rem;
+            font-size: 2rem;
+            text-align: center;
+            padding-top: 0.2rem;
+        
+            a{
+                color: white;
+                text-decoration: none;
+                list-style: none;
+            }
+        }
+
+    }
+}

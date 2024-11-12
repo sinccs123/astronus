@@ -1,0 +1,13 @@
+@use "../utilities/map";
+
+.Sec2{
+    background-color: map-get(map.$color, bksecundario);
+    width: 100%;
+    height: 30rem;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

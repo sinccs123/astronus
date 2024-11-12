@@ -1,0 +1,52 @@
+
+/*UTILIDADES*/
+@use "./utilities/map";
+
+
+/*BASE*/
+@use "./base/reset";
+@use "./base/font";
+
+/*LAYOUTS PRINCIPALES*/
+@use "./layout/header";
+@use "./layout/banner";
+@use "./layout/bannergaleria";
+@use "./layout/bannersobreastro";
+@use "./layout/bannercontacto";
+@use "./layout/descargar";
+@use "./layout/footer";
+
+
+/*LAYOUTS SITIO*/
+/*Index*/
+@use "./layout/Sec1";
+@use "./layout/Sec2";
+@use "./layout/Sec3";
+
+/*Galeria*/
+@use "./layout/containergaleria";
+
+
+/*SobreAstronus*/
+@use "./layout/Sec1_SA";
+@use "./layout/Sec2_SA";
+
+
+/*Contacto*/
+@use "./layout/Sec1_Contacto";
+
+/*Donar*/
+@use "./layout/bannerdonar";
+@use "./layout/Sec1donar";
+@use "./layout/Sec2donar";
+
+/*COMPONENTES*/
+@use "./components/cards";
+
+
+/*MEDIDAS*/
+@use "./layout/media/media1024";
+@use "./layout/media/media768";
+@use "./layout/media/media480";
+
+

@@ -1,0 +1,36 @@
+@use "../utilities/map";
+@use "../base/font";
+
+.DataSeccion{
+    background-color: map-get(map.$color, bksecundario );
+    display: flex;
+    padding-top: 1.25rem;
+    width: 100%;
+    height: 35rem;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    gap: 5rem;
+
+
+    img{
+        opacity: 50%;
+        height: 30rem;
+        padding-left: 12rem;
+    }
+
+    h3{
+        padding-top: 3rem;
+    }
+
+    p{
+        width: 80%;
+        font-weight: 400;
+        padding-right: 6rem;
+    }
+
+    article{
+        padding-top: 3rem;
+    }
+}

@@ -1,0 +1,65 @@
+@use "../utilities/map";
+@use "../base/font";
+
+.bannerSobreAstronus {
+    position: relative;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+
+    p{
+        font-weight: 600;
+    }
+
+    img{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .planeta{
+        position: absolute;
+        top: 20%;
+        left: 60%;
+
+        img{
+            width: 28rem;
+            height: 28rem;
+            opacity: 60%;
+        }
+    }
+
+    .TituloSobreAstronusFull {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 20;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        color: white;
+        text-align: start;
+        margin: 9rem;
+        width: 40rem;
+
+        h1{
+            display: flex;
+            margin-top: 2rem;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            font-weight: 400;
+        }
+
+        .tituloSobreAstronus1{
+            font-size: 3rem;
+        }
+
+        .destacado{
+            background-color: map-get(map.$color, primario );
+            padding: 0.1rem 0.5rem;
+        }
+    }
+
+}
