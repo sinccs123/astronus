@@ -1128,7 +1128,7 @@ footer .RedesSociales .iconos {
 }
 @media (max-width: 480px) {
   .Sec1 {
-    padding: 1rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
     width: 100%;
     flex-wrap: nowrap;
   }
@@ -1167,11 +1167,11 @@ footer .RedesSociales .iconos {
     flex-direction: column;
   }
   .marketplace .datamarket img {
-    height: 21rem;
+    height: 18rem;
     display: flex;
   }
   .marketplace .datamarket h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: white;
     padding-top: 2rem;
@@ -1214,6 +1214,9 @@ footer .RedesSociales .iconos {
   }
   .bannerGaleria .TituloGaleriaFull .titulogaleria1 {
     font-size: 3rem;
+  }
+  .galeria-container .Grid1 {
+    padding-top: 18rem;
   }
   .galeria-container .Grid2 {
     display: flex;

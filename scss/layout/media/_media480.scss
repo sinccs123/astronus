@@ -2,7 +2,7 @@
 
     .Sec1{
         @extend .Sec1;
-        padding: 1rem 0rem 0rem 0rem;
+        padding: 0rem 0rem 0rem 0rem;
         width: 100%;
         flex-wrap: nowrap;
         
@@ -47,12 +47,12 @@
             flex-direction: column;
 
             img{
-                height: 21rem;
+                height: 18rem;
                 display: flex;
             }
 
             h2{
-                font-size: 1.8rem;
+                font-size: 1.5rem;
                 font-weight: 600;
                 color: white;
                 padding-top: 2rem;
@@ -100,7 +100,6 @@
             width: auto;
             margin: 1.8rem 3rem 0rem 3rem;
             h1{
-
                 font-size: 1rem;
             }
             .titulogaleria1{
@@ -112,6 +111,11 @@
 
     .galeria-container{
         @extend .galeria-container;
+
+        .Grid1{
+            padding-top: 18rem;
+        }
+
         .Grid2{
             display: flex;
             flex-direction: column;
