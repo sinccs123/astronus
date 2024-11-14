@@ -2,13 +2,13 @@
 @use "../base/font";
 
 .Sec1_SA{
+    display: flex;
     font-family: "Poppins", sans-serif;
     background-color: map-get(map.$color, bksecundario);
     width: 100%;
     color: white;
     position: relative;
     height: auto;
-    display: flex;
     justify-content: space-between;
     padding: 0rem 4rem 0rem 4rem;
 

@@ -7,39 +7,63 @@
 
     .banner{
         @extend .banner;
-        height: 26rem;
+        height: auto;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
 
     .Sec1{
         @extend .Sec1;
-        padding: 6rem 2rem 2rem 8rem;
+        padding: 0;
+        width: 100%;
+        flex-wrap: nowrap;
+        height: auto;
         
+        .parte1{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 4rem;
 
-        img{
-            width: 18rem;
-            margin-left: 0rem;
-            padding-left: 0rem;
+            h1{
+                width: 50%;
+            }
+
+            p{
+                font-weight: 400;
+                width: 50%;
+            }
         }
 
-        p{
-            font-weight: 400;
-            width: 40%;
+        .parte2{
+            img{
+                display: none;
+                width: 18rem;
+                margin-left: 0rem;
+                padding-left: 0rem;
+            }
         }
     }
 
     .Sec2{
         @extend .Sec2;
-        padding-top: 35rem;
-        padding-bottom: 35rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         display: flex;
         justify-content: center;
         flex-direction: column;
+        flex-wrap: nowrap;
     }
 
     .cardSec2{
         @extend .cardSec2;
         width: 20rem;
-        height: 25rem;
+        height: 20rem;
     }
 
     .Content_comentarios{
@@ -47,10 +71,29 @@
         margin-bottom: 2rem;
     }
 
+    .descargar{
+        @extend .descargar;
+        width: 100%;
+
+
+        h1{
+
+            font-size: 1.8rem;
+        }
+    }
+
     /*SobreAstronus*/
     .bannerSobreAstronus{
         @extend .bannerSobreAstronus;
-        height: 30rem;
+        height: auto;
+        
+        .planeta{
+            display: none;
+        }
+
+        .TituloSobreAstronusFull{
+            bottom: 0;
+        }
     }
 
     

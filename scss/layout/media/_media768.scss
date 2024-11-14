@@ -2,6 +2,144 @@
     .banner{
         @extend .banner;
         height: auto;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .Sec1{
+        @extend .Sec1;
+        padding: 4rem 0rem 0rem 0rem;
+        width: 100%;
+        flex-wrap: nowrap;
+        
+        .parte1{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                width: 50%;
+            }
+
+            p{
+                font-weight: 400;
+                width: 50%;
+            }
+        }
+
+        .parte2{
+            img{
+                display: none;
+                width: 18rem;
+                margin-left: 0rem;
+                padding-left: 0rem;
+            }
+        }
+    }
+
+
+    /* Galería */
+
+    .bannerGaleria{
+        @extend .bannerGaleria;
+        .TituloGaleriaFull{
+            width: auto;
+            margin: 3rem 4rem 0rem 4rem;
+            h1{
+
+                font-size: 1rem;
+            }
+            .titulogaleria1{
+
+                font-size: 3rem;
+            }
+        }
+    }
+
+
+    .descargar{
+        @extend .descargar;
+        text-align: center;
+
+        h1{
+            width: 70%;
+        }
     }
     
+
+    footer{
+        position: absolute;
+        background-color: #131313;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+        gap: 4rem;
+
+            div a {
+                color: white;
+                text-decoration: none;
+            }
+        
+            img{
+                width: 6rem;
+                height: 6rem;
+                order: 1;
+            }
+        
+            .enlaces{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1px;
+                order: 2;
+            }
+        
+            .descarga-foot{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                order: 3;
+                width: 100%;
+
+            }
+        
+            .descarga-foot a{
+                display: flex;
+                flex-direction: column;
+                margin-top: 0.2rem;
+                justify-content: center;
+            
+            }
+        
+            .RedesSociales{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                order: 4;
+                
+                h3{
+                    display: flex;
+                }
+            
+                .iconos{
+                    padding-top: 0.5rem;
+                    flex-direction: row;
+                    gap: 2rem;
+                }
+            }
+        
+            
+    }
 }

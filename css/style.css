@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*UTILIDADES*/
 /*BASE*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -25,6 +26,7 @@ header .navbar-dark .navbar-nav .nav-link {
 }
 header .nav-item {
   margin: 0 1.5rem;
+  font-size: 1rem;
 }
 header .navbar-nav {
   margin: 0 auto;
@@ -123,12 +125,10 @@ header .activeDonar {
   line-height: 1.5rem;
   display: flex;
   margin-top: 2rem;
+  font-size: 1rem;
 }
 .bannerGaleria .TituloGaleriaFull .titulogaleria1 {
   font-size: 3rem;
-}
-.bannerGaleria .TituloGaleriaFull h1 {
-  font-size: 1rem;
 }
 .bannerGaleria .TituloGaleriaFull .destacado {
   background-color: #4A3EE5;
@@ -142,6 +142,9 @@ header .activeDonar {
 }
 .bannerSobreAstronus p {
   font-weight: 600;
+  line-height: 3.5rem;
+  color: white;
+  width: 100%;
 }
 .bannerSobreAstronus img {
   display: flex;
@@ -214,10 +217,10 @@ header .activeDonar {
   z-index: 1;
 }
 .bannerContacto .TituloFullContacto h1 {
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-top: 2rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  color: white;
+  width: 100%;
 }
 .bannerContacto .TituloFullContacto p {
   font-weight: 600;
@@ -250,21 +253,22 @@ header .activeDonar {
   border: none;
 }
 .descargar h1 {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 footer {
+  display: flex;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   position: absolute;
   color: white;
   background-color: #131313;
-  margin: 0 auto;
   padding: 20px;
-  display: flex;
   justify-content: space-between;
   width: 100%;
   padding-bottom: 2rem;
+  margin: 0 auto;
+  gap: 4rem;
 }
 footer img {
   display: flex;
@@ -298,10 +302,8 @@ footer .descarga-foot h3 {
   color: white;
 }
 footer .RedesSociales {
-  display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  padding-right: 0.5rem;
+  padding-right: 0rem;
 }
 footer .RedesSociales img {
   width: 40px;
@@ -310,48 +312,48 @@ footer .RedesSociales img {
 footer .RedesSociales h3 {
   font-size: 1.5rem;
   font-weight: 500;
-  margin-top: 10px;
   color: white;
+  padding-right: 0.8rem;
 }
 footer .RedesSociales .iconos {
   display: flex;
-  gap: 10px;
+  gap: 0.5rem;
 }
 
 /*LAYOUTS SITIO*/
 /*Index*/
 .Sec1 {
+  display: flex;
   font-family: "Poppins", sans-serif;
   background-color: #070707;
-  display: flex;
-  flex-direction: column;
-  padding: 8rem 19rem 2rem 19rem;
-  align-items: start;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 8rem 0rem 4rem 0rem;
 }
 .Sec1 img {
   width: 22rem;
-  padding: 2rem 0rem 0rem 4rem;
-  margin-left: 2rem;
 }
-.Sec1 div {
-  position: absolute;
-  left: 40rem;
+.Sec1 .parte1 {
+  width: auto;
+}
+.Sec1 .parte2 {
   filter: drop-shadow(0 0 80px rgba(73, 62, 229, 0.479));
 }
 .Sec1 h1 {
   font-weight: 600;
   line-height: 3.5rem;
   color: white;
-  width: 80%;
+  width: 100%;
 }
 .Sec1 p {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
   color: white;
-  width: 30%;
+  width: 40%;
   margin-top: 2rem;
-  text-align: start;
 }
 .Sec1 .destacado {
   background-color: #4A3EE5;
@@ -361,13 +363,14 @@ footer .RedesSociales .iconos {
 .Sec2 {
   background-color: #070707;
   width: 100%;
-  height: 30rem;
+  height: auto;
   color: white;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .marketplace {
@@ -378,6 +381,7 @@ footer .RedesSociales .iconos {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 1rem;
 }
 .marketplace .datamarket {
   display: flex;
@@ -469,7 +473,7 @@ footer .RedesSociales .iconos {
 }
 .galeria-container .Grid1 .video {
   width: auto;
-  height: 22rem;
+  height: auto;
 }
 .galeria-container .Grid2 {
   display: grid;
@@ -495,13 +499,13 @@ footer .RedesSociales .iconos {
 
 /*SobreAstronus*/
 .Sec1_SA {
+  display: flex;
   font-family: "Poppins", sans-serif;
   background-color: #070707;
   width: 100%;
   color: white;
   position: relative;
   height: auto;
-  display: flex;
   justify-content: space-between;
   padding: 0rem 4rem 0rem 4rem;
 }
@@ -578,7 +582,7 @@ footer .RedesSociales .iconos {
 }
 .formulario .form {
   height: 2.8rem;
-  width: 34rem;
+  width: 100%;
   color: rgb(173, 173, 173);
   font-weight: 500;
   font-size: 1rem;
@@ -591,7 +595,7 @@ footer .RedesSociales .iconos {
 }
 .formulario .form_mensaje {
   height: 12rem;
-  width: 34rem;
+  width: 100%;
   color: rgb(173, 173, 173);
   font-weight: 500;
   font-size: 1rem;
@@ -614,7 +618,7 @@ footer .RedesSociales .iconos {
 }
 .formulario .enviar {
   height: 3.2rem;
-  width: 34rem;
+  width: 100%;
   color: white;
   font-weight: 500;
   font-size: 1rem;
@@ -775,7 +779,7 @@ footer .RedesSociales .iconos {
 .cardSec2 {
   font-family: "Poppins", sans-serif;
   background-color: #171717;
-  width: 22rem;
+  width: 20rem;
   height: 23rem;
   border: none;
   border-radius: 1rem;
@@ -811,42 +815,150 @@ footer .RedesSociales .iconos {
 }
 
 /*MEDIDAS*/
+@media (max-width: 1280px) {
+  .nav-item a {
+    font-size: 0.8rem;
+  }
+  .banner {
+    height: auto;
+  }
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+  .Sec1 {
+    padding: 6rem 0rem 0rem 0rem;
+    width: 100%;
+    height: 33rem;
+    flex-wrap: nowrap;
+  }
+  .Sec1 .parte1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Sec1 .parte1 h1 {
+    width: 50%;
+  }
+  .Sec1 .parte1 p {
+    font-weight: 400;
+    width: 50%;
+  }
+  .Sec1 .parte2 img {
+    display: flex;
+    width: 18rem;
+    margin-right: 6rem;
+  }
+  .DataSeccion {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    padding-top: 0.4rem;
+    width: 100%;
+  }
+  .DataSeccion img {
+    width: 45rem;
+    height: 45rem;
+    padding-left: 0;
+  }
+  .DataSeccion article {
+    padding-top: 0rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-right: 0rem;
+    align-items: center;
+    padding-left: 4rem;
+  }
+  .DataSeccion article h3 {
+    width: 100%;
+    padding-left: 7rem;
+  }
+  .cardSec2 {
+    text-align: center;
+    width: 18rem;
+    height: auto;
+    margin-top: 2.5rem;
+  }
+}
+/*SobreAstronus*/
+.bannerSobreAstronus {
+  height: auto;
+}
+.bannerSobreAstronus .TituloSobreAstronusFull {
+  bottom: 0;
+}
+
 @media (max-width: 1024px) {
   .nav-item {
     font-size: 0.8rem;
   }
   .banner {
-    height: 26rem;
+    height: auto;
+  }
+  .banner img {
+    width: 100%;
+    height: auto;
   }
   .Sec1 {
-    padding: 6rem 2rem 2rem 8rem;
+    padding: 0;
+    width: 100%;
+    flex-wrap: nowrap;
+    height: auto;
   }
-  .Sec1 img {
+  .Sec1 .parte1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+  }
+  .Sec1 .parte1 h1 {
+    width: 50%;
+  }
+  .Sec1 .parte1 p {
+    font-weight: 400;
+    width: 50%;
+  }
+  .Sec1 .parte2 img {
+    display: none;
     width: 18rem;
     margin-left: 0rem;
     padding-left: 0rem;
   }
-  .Sec1 p {
-    font-weight: 400;
-    width: 40%;
-  }
   .Sec2 {
-    padding-top: 35rem;
-    padding-bottom: 35rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: nowrap;
   }
   .cardSec2 {
     width: 20rem;
-    height: 25rem;
+    height: 20rem;
   }
   .Content_comentarios {
     margin-bottom: 2rem;
   }
+  .descargar {
+    width: 100%;
+  }
+  .descargar h1 {
+    font-size: 1.8rem;
+  }
   /*SobreAstronus*/
   .bannerSobreAstronus {
-    height: 30rem;
+    height: auto;
+  }
+  .bannerSobreAstronus .planeta {
+    display: none;
+  }
+  .bannerSobreAstronus .TituloSobreAstronusFull {
+    bottom: 0;
   }
   footer {
     position: absolute;
@@ -908,6 +1020,269 @@ footer .RedesSociales .iconos {
 @media (max-width: 768px) {
   .banner {
     height: auto;
+  }
+  .banner img {
+    width: 100%;
+  }
+  .Sec1 {
+    padding: 4rem 0rem 0rem 0rem;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  .Sec1 .parte1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Sec1 .parte1 h1 {
+    width: 50%;
+  }
+  .Sec1 .parte1 p {
+    font-weight: 400;
+    width: 50%;
+  }
+  .Sec1 .parte2 img {
+    display: none;
+    width: 18rem;
+    margin-left: 0rem;
+    padding-left: 0rem;
+  }
+  /* Galería */
+  .bannerGaleria .TituloGaleriaFull {
+    width: auto;
+    margin: 3rem 4rem 0rem 4rem;
+  }
+  .bannerGaleria .TituloGaleriaFull h1 {
+    font-size: 1rem;
+  }
+  .bannerGaleria .TituloGaleriaFull .titulogaleria1 {
+    font-size: 3rem;
+  }
+  .descargar {
+    text-align: center;
+  }
+  .descargar h1 {
+    width: 70%;
+  }
+  footer {
+    position: absolute;
+    background-color: #131313;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    gap: 4rem;
+  }
+  footer div a {
+    color: white;
+    text-decoration: none;
+  }
+  footer img {
+    width: 6rem;
+    height: 6rem;
+    order: 1;
+  }
+  footer .enlaces {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    order: 2;
+  }
+  footer .descarga-foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 3;
+    width: 100%;
+  }
+  footer .descarga-foot a {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.2rem;
+    justify-content: center;
+  }
+  footer .RedesSociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 4;
+  }
+  footer .RedesSociales h3 {
+    display: flex;
+  }
+  footer .RedesSociales .iconos {
+    padding-top: 0.5rem;
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .Sec1 {
+    padding: 1rem 0rem 0rem 0rem;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  .Sec1 .parte1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Sec1 .parte1 h1 {
+    width: 70%;
+    line-height: 2.8rem;
+  }
+  .Sec1 .parte1 p {
+    font-weight: 400;
+    width: 70%;
+  }
+  .Sec1 img {
+    display: none;
+    width: 18rem;
+    margin-left: 0rem;
+    padding-left: 0rem;
+  }
+  .marketplace {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .marketplace .datamarket {
+    display: flex;
+    color: white;
+    flex-direction: column;
+  }
+  .marketplace .datamarket img {
+    height: 21rem;
+    display: flex;
+  }
+  .marketplace .datamarket h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+  .marketplace .datamarket h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    padding-left: 2rem;
+  }
+  .marketplace .Content_comentarios {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    border-radius: 1.125rem;
+    width: 90%;
+    height: auto;
+    padding-left: 1.25rem;
+    padding-bottom: 1rem;
+  }
+  .marketplace .Content_comentarios h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 1.2rem;
+    color: white;
+  }
+  .marketplace .Content_comentarios p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+  }
+  /* Galeria */
+  .bannerGaleria .TituloGaleriaFull {
+    width: auto;
+    margin: 1.8rem 3rem 0rem 3rem;
+  }
+  .bannerGaleria .TituloGaleriaFull h1 {
+    font-size: 1rem;
+  }
+  .bannerGaleria .TituloGaleriaFull .titulogaleria1 {
+    font-size: 3rem;
+  }
+  .galeria-container .Grid2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .descargar {
+    text-align: center;
+  }
+  .descargar h1 {
+    width: 70%;
+  }
+  footer {
+    position: absolute;
+    background-color: #131313;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    gap: 4rem;
+  }
+  footer div a {
+    color: white;
+    text-decoration: none;
+  }
+  footer img {
+    width: 6rem;
+    height: 6rem;
+    order: 1;
+  }
+  footer .enlaces {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    order: 2;
+  }
+  footer .descarga-foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 3;
+    width: 100%;
+  }
+  footer .descarga-foot a {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.2rem;
+    justify-content: center;
+  }
+  footer .RedesSociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 4;
+  }
+  footer .RedesSociales h3 {
+    display: flex;
+  }
+  footer .RedesSociales .iconos {
+    padding-top: 0.5rem;
+    flex-direction: row;
+    gap: 2rem;
   }
 }
 

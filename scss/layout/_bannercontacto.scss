@@ -1,5 +1,6 @@
 @use "../utilities/map";
 @use "../base/font";
+@use "../utilities/mixints" as *;
 
 .bannerContacto{
     position: absolute;
@@ -27,10 +28,7 @@
         z-index: 1;
 
         h1 {
-            font-weight: 500;
-            font-size: 1rem;
-            line-height: 1.5;
-            margin-top: 2rem;
+            @include tituloEstilo;
         }
 
         p {

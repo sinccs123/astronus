@@ -1,4 +1,207 @@
 @media (max-width: 480px){
 
+    .Sec1{
+        @extend .Sec1;
+        padding: 1rem 0rem 0rem 0rem;
+        width: 100%;
+        flex-wrap: nowrap;
+        
+        .parte1{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                width: 70%;
+                line-height: 2.8rem;
+            }
+
+            p{
+                font-weight: 400;
+                width: 70%;
+            }
+        }
+
+        img{
+            display: none;
+            width: 18rem;
+            margin-left: 0rem;
+            padding-left: 0rem;
+        }
+    }
+
+    .marketplace{
+        @extend .marketplace;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap; 
+
+        .datamarket{
+            display: flex;
+            color: white;
+            flex-direction: column;
+
+            img{
+                height: 21rem;
+                display: flex;
+            }
+
+            h2{
+                font-size: 1.8rem;
+                font-weight: 600;
+                color: white;
+                padding-top: 2rem;
+                padding-left: 2rem;
+            }
+
+            h5{
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: white;
+                padding-left: 2rem;
+            }
+        }
+
+        .Content_comentarios{
+            display: flex;
+            color: white;
+            flex-direction: column;
+            border-radius: 1.125rem;
+            width: 90%;
+            height: auto;
+            padding-left: 1.25rem;
+            padding-bottom: 1rem;
     
+            h2{
+                font-size: 1.5rem;
+                font-weight: 600;
+                padding-top: 1.2rem;
+                color: white;
+            }
+    
+            p{
+                font-size: 1rem;
+                font-weight: 400;
+                color: white;
+            }
+        }
+    }
+
+    /* Galeria */
+
+    .bannerGaleria{
+        @extend .bannerGaleria;
+        .TituloGaleriaFull{
+            width: auto;
+            margin: 1.8rem 3rem 0rem 3rem;
+            h1{
+
+                font-size: 1rem;
+            }
+            .titulogaleria1{
+
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .galeria-container{
+        @extend .galeria-container;
+        .Grid2{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .descargar{
+        @extend .descargar;
+        text-align: center;
+
+        h1{
+            width: 70%;
+        }
+    }
+
+
+    
+
+
+    footer{
+        position: absolute;
+        background-color: #131313;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: white;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+        gap: 4rem;
+
+            div a {
+                color: white;
+                text-decoration: none;
+            }
+        
+            img{
+                width: 6rem;
+                height: 6rem;
+                order: 1;
+            }
+        
+            .enlaces{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1px;
+                order: 2;
+            }
+        
+        
+        
+            .descarga-foot{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                order: 3;
+                width: 100%;
+
+            }
+        
+            .descarga-foot a{
+                display: flex;
+                flex-direction: column;
+                margin-top: 0.2rem;
+                justify-content: center;
+            
+            }
+        
+            .RedesSociales{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                order: 4;
+                
+                h3{
+                    display: flex;
+                }
+            
+                .iconos{
+                    padding-top: 0.5rem;
+                    flex-direction: row;
+                    gap: 2rem;
+                }
+            }
+        
+            
+    }
 }

@@ -1,31 +1,32 @@
 @use "../utilities/map";
 @use "../base/font";
+@use "../utilities/mixints" as *;
+
 
 .Sec1{
+    display: flex;
     font-family: 'Poppins', sans-serif;
     background-color: map-get(map.$color, bksecundario );
-    display: flex;
-    flex-direction: column;
-    padding: 8rem 19rem 2rem 19rem;
-    align-items: start;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8rem 0rem 4rem 0rem;
 
     img{
         width: 22rem;
-        padding: 2rem 0rem 0rem 4rem;
-        margin-left: 2rem;
     }
 
-    div{
-        position: absolute;
-        left: 40rem;
+    .parte1{
+        width: auto;
+    }
+
+    .parte2{
         filter: drop-shadow(0 0 80px rgba(73, 62, 229, 0.479));
     }
 
     h1{
-        font-weight: 600;
-        line-height: 3.5rem;
-        color: white;
-        width: 80%;
+        @include tituloEstilo;
     }
 
     p{
@@ -33,9 +34,8 @@
         font-size: 1rem;
         line-height: 1.5rem;
         color: white;
-        width: 30%;
+        width: 40%;
         margin-top: 2rem;
-        text-align: start;
     }
 
     .destacado{

@@ -2,17 +2,18 @@
 @use "../base/font";
 
 footer{
+    display: flex;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     position: absolute;
     color: white;
     background-color: #131313;
-    margin: 0 auto;
     padding: 20px;
-    display: flex;
     justify-content: space-between;
     width: 100%;
     padding-bottom: 2rem;
+    margin: 0 auto;
+    gap: 4rem;
 
     img{
         display: flex;
@@ -53,10 +54,8 @@ footer{
     }
 
     .RedesSociales{
-        display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        padding-right: 0.5rem;
+        padding-right: 0rem;
 
         img{
             width: 40px;
@@ -66,13 +65,13 @@ footer{
         h3{
             font-size: 1.5rem;
             font-weight: 500;
-            margin-top: 10px;
             color: white;
+            padding-right: 0.8rem;
         }
 
         .iconos{
             display: flex;
-            gap: 10px;
+            gap: 0.5rem;
         }
     }
 

@@ -1,5 +1,6 @@
 @use "../utilities/map";
 @use "../base/font";
+@use "../utilities/mixints" as *;
 
 .bannerGaleria{
     position: relative;
@@ -34,14 +35,11 @@
             line-height: 1.5rem;
             display: flex;
             margin-top: 2rem;
+            font-size: 1rem;
         }
         
         .titulogaleria1{
             font-size: 3rem;
-        }
-        
-        h1{
-            font-size: 1rem;
         }
 
         .destacado{
