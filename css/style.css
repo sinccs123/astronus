@@ -478,7 +478,8 @@ footer .RedesSociales .iconos {
 .galeria-container .Grid2 {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 25rem;
+  grid-template-rows: 25rem 25rem 25rem 25rem;
+  grid-template-areas: "img1 img2" "img2 img3" "img3 img4" "img4 img5" "img5 img6" "img7 img8";
   gap: 0rem;
   width: 100%;
 }
@@ -524,12 +525,13 @@ footer .RedesSociales .iconos {
   display: flex;
   padding-top: 1.25rem;
   width: 100%;
-  height: 35rem;
+  height: auto;
   flex-direction: row;
   justify-content: center;
   color: white;
   font-family: "Poppins", sans-serif;
   gap: 5rem;
+  padding-bottom: 1rem;
 }
 .DataSeccion img {
   opacity: 50%;
@@ -882,15 +884,22 @@ footer .RedesSociales .iconos {
     height: auto;
     margin-top: 2.5rem;
   }
+  /*Donar*/
+  .bannerDonar .TituloDonarFull {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20;
+    color: white;
+    text-align: center;
+    margin: 5rem;
+  }
+  .marketplaceDonar .datamarketDonar img {
+    width: 40rem;
+    height: auto;
+  }
 }
-/*SobreAstronus*/
-.bannerSobreAstronus {
-  height: auto;
-}
-.bannerSobreAstronus .TituloSobreAstronusFull {
-  bottom: 0;
-}
-
 @media (max-width: 1024px) {
   .nav-item {
     font-size: 0.8rem;
@@ -960,6 +969,43 @@ footer .RedesSociales .iconos {
   .bannerSobreAstronus .TituloSobreAstronusFull {
     bottom: 0;
   }
+  /*Donar*/
+  .bannerDonar .TituloDonarFull {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20;
+    color: white;
+    text-align: center;
+    margin: 5rem;
+  }
+  .bannerDonar .satelite img {
+    width: 28rem;
+  }
+  .marketplaceDonar {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0rem;
+    height: auto;
+    width: 100%;
+  }
+  .marketplaceDonar .datamarketDonar img {
+    width: 55rem;
+    height: auto;
+  }
+  .marketplaceDonar .Content_comentariosDonar {
+    height: auto;
+    width: 100%;
+    padding-bottom: 3rem;
+    justify-content: center;
+  }
+  .marketplaceDonar .Content_comentariosDonar .DonarBTN {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-left: 20rem;
+  }
   footer {
     position: absolute;
     background-color: #131313;
@@ -1023,6 +1069,7 @@ footer .RedesSociales .iconos {
   }
   .banner img {
     width: 100%;
+    height: auto;
   }
   .Sec1 {
     padding: 4rem 0rem 0rem 0rem;
@@ -1060,11 +1107,82 @@ footer .RedesSociales .iconos {
   .bannerGaleria .TituloGaleriaFull .titulogaleria1 {
     font-size: 3rem;
   }
+  /*Sobre Astronus*/
+  .bannerSobreAstronus {
+    height: auto;
+  }
+  .bannerSobreAstronus img {
+    height: 23rem;
+  }
+  .bannerSobreAstronus .TituloSobreAstronusFull {
+    width: 38rem;
+    margin: 5rem;
+    top: 5rem;
+  }
+  .bannerSobreAstronus .TituloSobreAstronusFull h1 {
+    margin-bottom: 5rem;
+    width: 100%;
+  }
+  .Sec1_SA {
+    padding: 0rem;
+  }
+  .Sec1_SA h1 {
+    padding-top: 3rem;
+    font-size: 2rem;
+    width: 100%;
+  }
+  .Sec1_SA img {
+    padding-right: 2rem;
+    height: 8rem;
+  }
   .descargar {
     text-align: center;
   }
   .descargar h1 {
     width: 70%;
+  }
+  /*Donar*/
+  .bannerDonar img {
+    height: 18rem;
+  }
+  .bannerDonar .TituloDonarFull {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20;
+    color: white;
+    text-align: center;
+    margin: 4rem;
+  }
+  .bannerDonar .satelite img {
+    width: 22rem;
+  }
+  .marketplaceDonar {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0rem;
+    height: auto;
+    width: 100%;
+  }
+  .marketplaceDonar .datamarketDonar img {
+    width: 40rem;
+    height: auto;
+  }
+  .marketplaceDonar .Content_comentariosDonar {
+    height: auto;
+    width: 100%;
+    padding-bottom: 3rem;
+    justify-content: center;
+  }
+  .marketplaceDonar .Content_comentariosDonar .todos_comentariosDonar {
+    width: 90%;
+  }
+  .marketplaceDonar .Content_comentariosDonar .DonarBTN {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-left: 13rem;
   }
   footer {
     position: absolute;
@@ -1222,11 +1340,107 @@ footer .RedesSociales .iconos {
     display: flex;
     flex-direction: column;
   }
+  /*Sobre Astronus*/
+  .bannerSobreAstronus {
+    height: auto;
+  }
+  .bannerSobreAstronus img {
+    height: 40rem;
+  }
+  .bannerSobreAstronus .TituloSobreAstronusFull {
+    width: 20rem;
+    margin: 5rem;
+    top: 5rem;
+  }
+  .bannerSobreAstronus .TituloSobreAstronusFull h1 {
+    margin-bottom: 5rem;
+    width: 100%;
+  }
+  .Sec1_SA h1 {
+    padding-left: 3.5rem;
+    padding-top: 2rem;
+    font-size: 1.8rem;
+  }
+  .DataSeccion img {
+    height: 26rem;
+    width: auto;
+  }
+  .DataSeccion p {
+    padding-right: 2rem;
+  }
+  .DataSeccion article {
+    padding-top: 0rem;
+  }
   .descargar {
     text-align: center;
   }
   .descargar h1 {
     width: 70%;
+  }
+  /*Donar*/
+  .bannerDonar img {
+    height: 18rem;
+  }
+  .bannerDonar .TituloDonarFull {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20;
+    color: white;
+    text-align: center;
+    margin: 4rem;
+  }
+  .bannerDonar .satelite img {
+    display: none;
+  }
+  .Sec1_Donar {
+    flex-direction: row;
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  .Sec1_Donar img {
+    width: 2rem;
+    margin-bottom: 0.6rem;
+  }
+  .Sec1_Donar h1 {
+    color: white;
+  }
+  .marketplaceDonar {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0rem;
+    height: auto;
+    width: 100%;
+  }
+  .marketplaceDonar .datamarketDonar {
+    padding-bottom: 1.5rem;
+  }
+  .marketplaceDonar .datamarketDonar img {
+    width: 28rem;
+    height: auto;
+  }
+  .marketplaceDonar .Content_comentariosDonar {
+    height: auto;
+    width: 100%;
+    padding-bottom: 3rem;
+    justify-content: center;
+  }
+  .marketplaceDonar .Content_comentariosDonar .todos_comentariosDonar {
+    width: 50%;
+    gap: 2rem;
+  }
+  .marketplaceDonar .Content_comentariosDonar .todos_comentariosDonar h3 {
+    font-size: 1.2rem;
+  }
+  .marketplaceDonar .Content_comentariosDonar .DonarBTN {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-left: 3.5rem;
   }
   footer {
     position: absolute;

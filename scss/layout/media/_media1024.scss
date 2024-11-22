@@ -96,6 +96,57 @@
         }
     }
 
+    /*Donar*/
+    
+    .bannerDonar{
+        .TituloDonarFull {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 20;
+            color: white;
+            text-align: center;
+            margin: 5rem;
+        }
+
+        .satelite{
+            img{
+                width: 28rem;
+            }
+        }
+    }
+
+    .marketplaceDonar{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0rem;
+        height: auto;
+        width: 100%;
+
+        .datamarketDonar{
+            img{
+                width: 55rem;
+                height: auto;
+            }
+        }
+
+        .Content_comentariosDonar{
+            height: auto;
+            width: 100%;
+            padding-bottom: 3rem;
+            justify-content: center;
+
+            .DonarBTN{
+                display: flex;
+                justify-content: center;
+                margin-top: 3rem;
+                margin-left: 20rem;
+            }
+        }
+    }
+    
+
     
     footer{
         position: absolute;

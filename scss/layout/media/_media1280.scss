@@ -88,15 +88,29 @@
         height: auto;
         margin-top: 2.5rem;
     }
-}
 
-    /*SobreAstronus*/
-    .bannerSobreAstronus{
-        @extend .bannerSobreAstronus;
-        height: auto;
-
-        .TituloSobreAstronusFull{
-            bottom: 0;
+    /*Donar*/
+    
+    .bannerDonar{
+        .TituloDonarFull {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 20;
+            color: white;
+            text-align: center;
+            margin: 5rem;
         }
     }
 
+    .marketplaceDonar{
+        .datamarketDonar{
+            img{
+                width: 40rem;
+                height: auto;
+            }
+        }
+    }
+
+}

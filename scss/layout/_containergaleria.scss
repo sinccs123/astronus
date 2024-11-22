@@ -26,7 +26,14 @@
     .Grid2{
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 25rem;
+        grid-template-rows: 25rem 25rem 25rem 25rem;
+        grid-template-areas: 
+            "img1 img2"
+            "img2 img3"
+            "img3 img4"
+            "img4 img5"
+            "img5 img6"
+            "img7 img8";
         gap: 0rem;
         width: 100%;
 
@@ -48,3 +55,4 @@
         }
     }
 }
+
