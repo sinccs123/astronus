@@ -1385,10 +1385,17 @@ footer .RedesSociales .iconos {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 20;
+    bottom: 0;
     color: white;
-    text-align: center;
-    margin: 4rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .bannerDonar .TituloDonarFull p {
+    width: 80%;
+    font-size: 2rem;
   }
   .bannerDonar .satelite img {
     display: none;
@@ -1399,14 +1406,15 @@ footer .RedesSociales .iconos {
     padding-left: 2rem;
     padding-bottom: 1rem;
     justify-content: flex-start;
-    gap: 2rem;
+    gap: 1.4rem;
   }
   .Sec1_Donar img {
-    width: 2rem;
+    width: 1.4rem;
     margin-bottom: 0.6rem;
   }
   .Sec1_Donar h1 {
     color: white;
+    font-size: 1.5rem;
   }
   .marketplaceDonar {
     display: flex;
@@ -1419,7 +1427,7 @@ footer .RedesSociales .iconos {
     padding-bottom: 1.5rem;
   }
   .marketplaceDonar .datamarketDonar img {
-    width: 28rem;
+    width: 23rem;
     height: auto;
   }
   .marketplaceDonar .Content_comentariosDonar {
@@ -1614,23 +1622,25 @@ footer .RedesSociales .iconos {
   }
   /*Sobre Astronus*/
   .bannerSobreAstronus {
-    height: auto;
+    margin-top: 4rem;
+    height: 42rem;
     margin: 0;
   }
   .bannerSobreAstronus img {
-    height: 35rem;
+    height: 42rem;
   }
   .bannerSobreAstronus .TituloSobreAstronusFull {
-    width: 18rem;
-    margin: 1.5rem;
-    top: 5rem;
+    width: 100%;
+    height: auto;
+    margin: 1.5rem 0rem 0rem 1rem;
   }
   .bannerSobreAstronus .TituloSobreAstronusFull h1 {
     font-size: 1rem;
     margin-bottom: 6rem;
-    width: 100%;
+    width: 80%;
   }
   .bannerSobreAstronus .TituloSobreAstronusFull .tituloSobreAstronus1 {
+    width: 80%;
     font-size: 2rem;
   }
   .Sec1_SA h1 {
@@ -1690,13 +1700,16 @@ footer .RedesSociales .iconos {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 20;
+    bottom: 0;
     color: white;
-    text-align: center;
-    margin: 3rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .bannerDonar .tituloDonar1 {
-    font-weight: 600;
+  .bannerDonar .TituloDonarFull p {
+    width: 80%;
     font-size: 2rem;
   }
   .bannerDonar .satelite img {
