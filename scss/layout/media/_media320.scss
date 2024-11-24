@@ -144,29 +144,33 @@
 
     .bannerSobreAstronus{
         @extend .bannerSobreAstronus;
-        margin-top: 4rem;
-        height: 42rem;
-        margin: 0;
-
+        height: auto;
+    
         img{
-            height: 42rem;
+            height: 40rem;
         }
     
         .TituloSobreAstronusFull{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
             width: 100%;
-            height: auto;
-            margin: 1.5rem 0rem 0rem 1rem;
+            margin: 0rem;
+            top: 4rem;
         
             h1{
-                font-size: 1rem;
-                margin-bottom: 6rem;
-                width: 80%;
+                width: 75%;
+                margin-bottom: 5rem;
             }
 
             .tituloSobreAstronus1{
-                width: 80%;
-                font-size: 2rem;
+                font-size: 1.8rem;
+                display: flex;
+                justify-content: center;
             }
+
+
         }
     }
 
@@ -179,14 +183,15 @@
 
         img{
             width: auto;
-            height: 5rem;
+            height: 4.5rem;
         }
     }
 
     .DataSeccion{
+        padding-left: 1.2rem;
         width: 100%;
 
-        img{
+        .img2{
             height: 20rem;
             width: auto;
         }
